@@ -1,0 +1,14 @@
+<svg width="95" height="144" viewBox="0 0 95 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_5_50" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="95" height="144">
+<path d="M2.4 2.5L0 5L0.2 72.6C0.5 138.2 0.6 140.2 2.4 141.6C4 142.8 11.8 143 47.5 143C99.2 143 94.3 144.6 94.8 127.8C95 121.7 94.9 115.3 94.6 113.4C93.3 107 93.4 107 66.5 107H42.1L41.8 55.4L41.5 3.8L39.1 1.89999C37 0.199994 35 0 20.8 0C5.2 0 4.9 0 2.4 2.5Z" fill="black"/>
+</mask>
+<g mask="url(#mask0_5_50)">
+<rect x="-156.411" y="108.073" width="278.589" height="127.113" transform="rotate(-40 -156.411 108.073)" fill="#38BDF8"/>
+</g>
+<mask id="mask1_5_50" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="95" height="144">
+<path d="M2.4 2.5L0 5L0.2 72.6C0.5 138.2 0.6 140.2 2.4 141.6C4 142.8 11.8 143 47.5 143C99.2 143 94.3 144.6 94.8 127.8C95 121.7 94.9 115.3 94.6 113.4C93.3 107 93.4 107 66.5 107H42.1L41.8 55.4L41.5 3.8L39.1 1.9C37 0.199998 35 -2.13148e-06 20.8 -2.13148e-06C5.2 -2.13148e-06 4.9 -2.13148e-06 2.4 2.5Z" fill="black"/>
+</mask>
+<g mask="url(#mask1_5_50)">
+<rect x="-75.1788" y="205.464" width="240.735" height="84.4683" transform="rotate(-40 -75.1788 205.464)" fill="#0EA5E9"/>
+</g>
+</svg>
