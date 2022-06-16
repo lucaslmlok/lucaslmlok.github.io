@@ -5,7 +5,7 @@ import Section from '../components/Section';
 import Text from '../components/Text';
 import Button from '../components/Button';
 import * as Scroll from '../helpers/scroll';
-// import Profile from '../assets/images/profile.jpg';
+import Profile from '../assets/images/profile.jpg';
 
 const typewriterOptions = {
   strings: ['React.', 'Next.js.', 'Angular.', 'Tailwind CSS.'],
@@ -61,7 +61,7 @@ function Intro() {
                 <div className="profile">
                   <img
                     className="absolute inset-0 w-full h-full object-cover scale-110 brightness-110 contrast-[1.1]"
-                    src=""
+                    src={Profile}
                     alt=""
                   />
                 </div>
