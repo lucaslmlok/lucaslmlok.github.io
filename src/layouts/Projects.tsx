@@ -1,30 +1,30 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Element } from "react-scroll";
-import Container from "../components/Container";
-import Section from "../components/Section";
-import Title from "../components/Title";
-import Text from "../components/Text";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Element } from 'react-scroll';
 
-import { HiCollection } from "react-icons/hi";
-import { BiCalendar, BiChevronRight } from "react-icons/bi";
-import { VscGlobe } from "react-icons/vsc";
-import { RiListSettingsLine, RiAndroidLine } from "react-icons/ri";
-import { GrGamepad } from "react-icons/gr";
-import { FiBookOpen } from "react-icons/fi";
-import { FaAppStore } from "react-icons/fa";
+import { HiCollection } from 'react-icons/hi';
+import { BiCalendar, BiChevronRight } from 'react-icons/bi';
+import { VscGlobe } from 'react-icons/vsc';
+import { RiListSettingsLine, RiAndroidLine } from 'react-icons/ri';
+import { GrGamepad } from 'react-icons/gr';
+import { FiBookOpen } from 'react-icons/fi';
+import { FaAppStore } from 'react-icons/fa';
+import Text from '../components/Text';
+import Title from '../components/Title';
+import Section from '../components/Section';
+import Container from '../components/Container';
 
-import hyundaiScreenshot from "../assets/images/projects/hyundai_click_to_buy.png";
-import mercedesBenzScreenshot from "../assets/images/projects/mercedes_benz.png";
-import cityuCsScreenshot from "../assets/images/projects/cityu_cs.png";
-import upbeatScreenshot from "../assets/images/projects/upbeat.png";
-import spacetown1Screenshot from "../assets/images/projects/spacetown_1.png";
-import spacetown2Screenshot from "../assets/images/projects/spacetown_2.png";
-import bookworksScreenshot from "../assets/images/projects/bookworks.png";
-import hkecdsScreenshot from "../assets/images/projects/hkecds.png";
-import hkecdsIconScreenshot from "../assets/images/projects/hkecds_icon.png";
-import hadScreenshot from "../assets/images/projects/had.png";
-import myspfe1Screenshot from "../assets/images/projects/myspfe_1.png";
-import myspfe2Screenshot from "../assets/images/projects/myspfe_2.png";
+import hyundaiScreenshot from '../assets/images/projects/hyundai_click_to_buy.png';
+import mercedesBenzScreenshot from '../assets/images/projects/mercedes_benz.png';
+import cityuCsScreenshot from '../assets/images/projects/cityu_cs.png';
+import upbeatScreenshot from '../assets/images/projects/upbeat.png';
+import spacetown1Screenshot from '../assets/images/projects/spacetown_1.png';
+import spacetown2Screenshot from '../assets/images/projects/spacetown_2.png';
+import bookworksScreenshot from '../assets/images/projects/bookworks.png';
+import hkecdsScreenshot from '../assets/images/projects/hkecds.png';
+import hkecdsIconScreenshot from '../assets/images/projects/hkecds_icon.png';
+import hadScreenshot from '../assets/images/projects/had.png';
+import myspfe1Screenshot from '../assets/images/projects/myspfe_1.png';
+import myspfe2Screenshot from '../assets/images/projects/myspfe_2.png';
 
 const swiperBreakpoints = {
   768: {
@@ -53,7 +53,7 @@ const swiperBreakpoints = {
   },
 };
 
-const Projects = () => {
+function Projects() {
   return (
     <Element name="projects">
       <Section customClass="bg-gradient-to-b from-white to-blue-50/50 pt-0">
@@ -102,7 +102,7 @@ const Projects = () => {
                   Click to Buy - Online Car Buying Experience
                 </h3>
                 <div className="project-view">
-                  view the site{" "}
+                  view the site{' '}
                   <BiChevronRight size={20} className="mt-[0.1rem]" />
                 </div>
               </div>
@@ -140,7 +140,7 @@ const Projects = () => {
                 <div className="project-header">Mercedes-Benz Hong Kong</div>
                 <h3 className="project-title">Online Aftersales Platform</h3>
                 <div className="project-view">
-                  view the site{" "}
+                  view the site{' '}
                   <BiChevronRight size={20} className="mt-[0.1rem]" />
                 </div>
               </div>
@@ -181,7 +181,7 @@ const Projects = () => {
                 <div className="project-header">Hong Kong Education City</div>
                 <h3 className="project-title">Space Town Go!</h3>
                 <div className="project-view">
-                  view the site{" "}
+                  view the site{' '}
                   <BiChevronRight size={20} className="mt-[0.1rem]" />
                 </div>
               </div>
@@ -213,7 +213,7 @@ const Projects = () => {
                   Department of Computer Science
                 </h3>
                 <div className="project-view">
-                  view the site{" "}
+                  view the site{' '}
                   <BiChevronRight size={20} className="mt-[0.1rem]" />
                 </div>
               </div>
@@ -254,7 +254,7 @@ const Projects = () => {
                   The Hong Kong Early Child Development Scale
                 </h3>
                 <div className="project-view">
-                  view the app{" "}
+                  view the app{' '}
                   <BiChevronRight size={20} className="mt-[0.1rem]" />
                 </div>
               </div>
@@ -282,7 +282,7 @@ const Projects = () => {
                 <div className="project-header">Upbeat Media</div>
                 <h3 className="project-title">Student Ambassador Programme</h3>
                 <div className="project-view">
-                  view the site{" "}
+                  view the site{' '}
                   <BiChevronRight size={20} className="mt-[0.1rem]" />
                 </div>
               </div>
@@ -318,7 +318,7 @@ const Projects = () => {
                 <div className="project-header">Hong Kong Education Bureau</div>
                 <h3 className="project-title">Book Works Reading Site</h3>
                 <div className="project-view">
-                  view the site{" "}
+                  view the site{' '}
                   <BiChevronRight size={20} className="mt-[0.1rem]" />
                 </div>
               </div>
@@ -342,7 +342,7 @@ const Projects = () => {
                 <div className="project-header">The Government of HKSAR</div>
                 <h3 className="project-title">Home Affairs Department</h3>
                 <div className="project-view">
-                  view the site{" "}
+                  view the site{' '}
                   <BiChevronRight size={20} className="mt-[0.1rem]" />
                 </div>
               </div>
@@ -385,7 +385,7 @@ const Projects = () => {
                   School Partnership and Field Experience Office
                 </h3>
                 <div className="project-view">
-                  view the app{" "}
+                  view the app{' '}
                   <BiChevronRight size={20} className="mt-[0.1rem]" />
                 </div>
               </div>
@@ -395,6 +395,6 @@ const Projects = () => {
       </Section>
     </Element>
   );
-};
+}
 
 export default Projects;

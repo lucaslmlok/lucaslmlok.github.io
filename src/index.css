@@ -1,140 +1,140 @@
 /* @import url("http://fonts.cdnfonts.com/css/sofia-pro"); */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
-    .project {
-        @apply relative flex flex-col justify-end items-start bg-blue-50 h-[32rem] px-6 py-5 rounded-3xl text-left overflow-hidden select-none
+  .project {
+    @apply relative flex flex-col justify-end items-start bg-blue-50 h-[32rem] px-6 py-5 rounded-3xl text-left overflow-hidden select-none
         md:h-[38rem] md:px-8 md:py-7;
-    }
+  }
 
-    .project-tag-container {
-        @apply absolute top-5 left-6 md:top-7 md:left-8;
-    }
+  .project-tag-container {
+    @apply absolute top-5 left-6 md:top-7 md:left-8;
+  }
 
-    .project-tag {
-        @apply mr-2 mb-2 inline-flex items-center bg-blue-600/90 text-white font-light tracking-wide text-xs px-3 py-2 rounded-xl
+  .project-tag {
+    @apply mr-2 mb-2 inline-flex items-center bg-blue-600/90 text-white font-light tracking-wide text-xs px-3 py-2 rounded-xl
         md:mr-4 md:text-sm;
-    }
+  }
 
-    .project-header {
-        @apply font-semibold text-lg text-slate-800;
-    }
+  .project-header {
+    @apply font-semibold text-lg text-slate-800;
+  }
 
-    .project-title {
-        @apply font-extrabold text-xl text-slate-800/80 tracking-tight my-2;
-    }
+  .project-title {
+    @apply font-extrabold text-xl text-slate-800/80 tracking-tight my-2;
+  }
 
-    .project-view {
-        @apply inline-flex items-center text-slate-600 overflow-hidden -mt-5 opacity-0 transition-all duration-500 ease-in-out group-hover:mt-0 group-hover:opacity-100;
-    }
+  .project-view {
+    @apply inline-flex items-center text-slate-600 overflow-hidden -mt-5 opacity-0 transition-all duration-500 ease-in-out group-hover:mt-0 group-hover:opacity-100;
+  }
 
-    .project-img-fade-container {
-        mask-image: linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 1) 75%,
-            transparent 100%
-        );
-    }
+  .project-img-fade-container {
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 75%,
+      transparent 100%
+    );
+  }
 
-    .Typewriter {
-        @apply inline-block;
-    }
+  .Typewriter {
+    @apply inline-block;
+  }
 
-    .profile {
-        @apply relative w-full pt-[125%] overflow-hidden rounded-[4rem] border-2 border-blue-500 rotate-3
+  .profile {
+    @apply relative w-full pt-[125%] overflow-hidden rounded-[4rem] border-2 border-blue-500 rotate-3
         after:content-[''] after:block after:absolute after:inset-0 after:w-full after:h-full after:bg-blue-400/30;
-    }
+  }
 
-    @keyframes profile-move {
-        0%,
-        100% {
-            transform: translateY(0);
-        }
-        50% {
-            transform: translateY(-1.5rem);
-        }
+  @keyframes profile-move {
+    0%,
+    100% {
+      transform: translateY(0);
     }
-
-    .profile-img {
-        animation: profile-move 6s ease-in-out infinite;
+    50% {
+      transform: translateY(-1.5rem);
     }
+  }
 
-    .button {
-        @apply relative w-full text-white leading-6 font-medium py-3 px-4 rounded-xl shadow-md overflow-hidden sm:w-auto
+  .profile-img {
+    animation: profile-move 6s ease-in-out infinite;
+  }
+
+  .button {
+    @apply relative w-full text-white leading-6 font-medium py-3 px-4 rounded-xl shadow-md overflow-hidden sm:w-auto
         before:content-[""] before:block before:absolute before:z-10 before:inset-0 before:w-full before:h-full
         before:opacity-0 before:transition-opacity before:ease-in-out before:duration-300
         hover:before:opacity-100;
-    }
+  }
 
-    .button-inner {
-        @apply relative z-20 inline-flex items-center justify-center;
-    }
+  .button-inner {
+    @apply relative z-20 inline-flex items-center justify-center;
+  }
 
-    .button-icon {
-        @apply ml-1 -mr-0.5 transition-transform;
-    }
+  .button-icon {
+    @apply ml-1 -mr-0.5 transition-transform;
+  }
 
-    .button:hover .button-icon {
-        @apply translate-x-0.5;
-    }
+  .button:hover .button-icon {
+    @apply translate-x-0.5;
+  }
 
-    .intro {
-        background-image: url("./assets/images/half_circle_down.svg"),
-            linear-gradient(180deg, #cffafe, #dbeafe);
-        background-position: 50% 100%, 0 0;
-        background-size: contain, auto;
-        background-repeat: no-repeat, repeat;
-        @apply !pb-44 lg:!pb-80;
-    }
+  .intro {
+    background-image: url('./assets/images/half_circle_down.svg'),
+      linear-gradient(180deg, #cffafe, #dbeafe);
+    background-position: 50% 100%, 0 0;
+    background-size: contain, auto;
+    background-repeat: no-repeat, repeat;
+    @apply !pb-44 lg:!pb-80;
+  }
 
-    .contact {
-        background-image: url("./assets/images/half_circle_up.svg"),
-            linear-gradient(180deg, white, #cffafe);
-        background-position: 50% 0%, 0 0;
-        background-size: contain, auto;
-        background-repeat: no-repeat, repeat;
-    }
+  .contact {
+    background-image: url('./assets/images/half_circle_up.svg'),
+      linear-gradient(180deg, white, #cffafe);
+    background-position: 50% 0%, 0 0;
+    background-size: contain, auto;
+    background-repeat: no-repeat, repeat;
+  }
 
-    .ping {
-        @apply animate-ping;
-        animation-duration: 1.75s;
-    }
+  .ping {
+    @apply animate-ping;
+    animation-duration: 1.75s;
+  }
 
-    @media (min-width: 1024px) {
-        .project-swiper {
-            mask-image: linear-gradient(
-                to right,
-                rgba(0, 0, 0, 0.3) 0%,
-                rgba(0, 0, 0, 1) 10%,
-                rgba(0, 0, 0, 1) 90%,
-                rgba(0, 0, 0, 0.3) 100%
-            );
-        }
+  @media (min-width: 1024px) {
+    .project-swiper {
+      mask-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 1) 10%,
+        rgba(0, 0, 0, 1) 90%,
+        rgba(0, 0, 0, 0.3) 100%
+      );
     }
+  }
 }
 
 .mobile-menu-enter {
-    @apply max-h-0;
+  @apply max-h-0;
 }
 
 .mobile-menu-enter-active {
-    @apply max-h-[180px];
-    transition: all 400ms;
+  @apply max-h-[180px];
+  transition: all 400ms;
 }
 
 .mobile-menu-enter-done {
-    @apply max-h-[180px];
+  @apply max-h-[180px];
 }
 
 .mobile-menu-exit {
-    @apply max-h-[180px];
+  @apply max-h-[180px];
 }
 
 .mobile-menu-exit-active {
-    @apply max-h-0;
-    transition: all 400ms;
+  @apply max-h-0;
+  transition: all 400ms;
 }

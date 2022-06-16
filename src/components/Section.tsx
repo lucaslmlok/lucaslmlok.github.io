@@ -1,15 +1,12 @@
-import { FC } from "react";
-
 type Props = {
-    customClass?: string;
+  customClass?: string;
+  children: React.ReactNode;
 };
 
-const Section: FC<Props> = ({ customClass = "", children }) => {
-    return (
-        <section className={`py-20 text-center ${customClass}`}>
-            {children}
-        </section>
-    );
-};
+function Section({ customClass = '', children }: Props) {
+  return (
+    <section className={`py-20 text-center ${customClass}`}>{children}</section>
+  );
+}
 
 export default Section;

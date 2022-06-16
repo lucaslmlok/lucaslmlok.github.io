@@ -1,11 +1,10 @@
-import { FC } from "react";
-
 type Props = {
-    customClass?: string;
+  customClass?: string;
+  children: React.ReactChild | React.ReactChild[];
 };
 
-const Text: FC<Props> = ({ customClass = "", children }) => {
-    return <p className={`text-slate-700 text-lg ${customClass}`}>{children}</p>;
-};
+function Text({ customClass = '', children }: Props) {
+  return <p className={`text-slate-700 text-lg ${customClass}`}>{children}</p>;
+}
 
 export default Text;

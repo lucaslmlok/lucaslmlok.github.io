@@ -1,11 +1,10 @@
-import { FC } from "react";
-
 type Props = {
-    customClass: string;
+  customClass: string;
+  children: React.ReactChild;
 };
 
-const SubTitle: FC<Props> = ({ customClass, children }) => {
-    return <h3 className={`mt-8 font-semibold ${customClass}`}>{children}</h3>;
-};
+function SubTitle({ customClass, children }: Props) {
+  return <h3 className={`mt-8 font-semibold ${customClass}`}>{children}</h3>;
+}
 
 export default SubTitle;
