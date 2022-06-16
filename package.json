@@ -12,9 +12,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "prettier": "prettier --write .",
+    "prepare": "husky install",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "prepare": "husky install"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
