@@ -85,6 +85,7 @@ function ContactForm() {
         </label>
       </div>
       <Button
+        isSubmit
         customClass="self-start mr-8 bg-gradient-to-r from-blue-600/90 to-cyan-600/90 before:bg-gradient-to-r before:from-cyan-600/90 before:to-blue-600/90"
         onClick={() => handleSubmit(onSubmit)}
       >
