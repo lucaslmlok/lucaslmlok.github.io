@@ -25,6 +25,12 @@ import IconMongodb from '../assets/images/skills/mongodb.svg';
 import IconRedis from '../assets/images/skills/redis.svg';
 import IconFirebase from '../assets/images/skills/firebase.svg';
 
+type SkillItemProps = {
+  icon: string;
+  title: string;
+  size?: 'medium' | 'small';
+};
+
 const skillList = [
   { title: 'Typescript', icon: IconTypescript },
   { title: 'React', icon: IconReact },
@@ -46,6 +52,24 @@ const skillList = [
   { title: 'Firebase', icon: IconFirebase },
 ];
 
+export function SkillItem({ icon, title, size = 'medium' }: SkillItemProps) {
+  const customClass = size === 'small' ? 'py-4 px-2' : 'py-5 px-2';
+  const customSize = size === 'small' ? 'mb-3 h-10 w-10' : 'mb-4 h-12 w-12';
+
+  return (
+    <li
+      className={`group flex min-w-[7rem] flex-col items-center rounded-3xl bg-sky-100/50 transition-colors hover:bg-sky-100/80 ${customClass}`}
+    >
+      <img
+        src={icon}
+        alt={title}
+        className={`object-contain transition-transform duration-300 group-hover:scale-[1.1] ${customSize}`}
+      />
+      <span className="font-semibold text-sky-900">{title}</span>
+    </li>
+  );
+}
+
 function Skills() {
   return (
     <Element name="skills">
@@ -56,19 +80,9 @@ function Skills() {
             Tech Skills
           </Title>
           <Text>For those who want to know more technically...</Text>
-          <ul className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-9 gap-7 mt-16">
+          <ul className="mt-14 grid grid-cols-2 gap-7 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-9">
             {skillList.map(({ title, icon }) => (
-              <li
-                key={title}
-                className="bg-sky-100/50 flex flex-col items-center rounded-3xl py-6 px-2 group transition-colors hover:bg-sky-100/80 sm:py-6 sm:px-2"
-              >
-                <img
-                  src={icon}
-                  alt={title}
-                  className="object-contain w-14 h-14 mb-4 transition-transform duration-300 group-hover:scale-[1.1]"
-                />
-                <span className="text-sky-900 font-semibold">{title}</span>
-              </li>
+              <SkillItem key={title} title={title} icon={icon} />
             ))}
           </ul>
         </Container>

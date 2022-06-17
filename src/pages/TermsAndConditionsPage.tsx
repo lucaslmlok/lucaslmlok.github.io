@@ -1,10 +1,11 @@
 import Container from '../components/Container';
+import PageWrapper from '../components/PageWrapper';
 
 function TermsAndConditionsPage() {
   return (
     <Container>
-      <div className="pt-2 pb-16">
-        <h1 className="text-3xl font-extrabold mt-10 mb-2">
+      <PageWrapper>
+        <h1 className="mt-10 mb-2 text-3xl font-extrabold">
           Terms and Conditions
         </h1>
         <p>Last updated: March 02, 2022</p>
@@ -13,10 +14,10 @@ function TermsAndConditionsPage() {
           Service.
         </p>
 
-        <h1 className="text-3xl font-extrabold mt-10 mb-2">
+        <h1 className="mt-10 mb-2 text-3xl font-extrabold">
           Interpretation and Definitions
         </h1>
-        <h2 className="text-2xl font-bold mt-6 mb-2">Interpretation</h2>
+        <h2 className="mt-6 mb-2 text-2xl font-bold">Interpretation</h2>
         <p>
           The words of which the initial letter is capitalized have meanings
           defined under the following conditions. The following definitions
@@ -24,7 +25,7 @@ function TermsAndConditionsPage() {
           singular or in plural.
         </p>
 
-        <h2 className="text-2xl font-bold mt-6 mb-2">Definitions</h2>
+        <h2 className="mt-6 mb-2 text-2xl font-bold">Definitions</h2>
         <p>For the purposes of these Terms and Conditions:</p>
         <ul className="list-disc pl-4">
           <li>
@@ -141,7 +142,7 @@ function TermsAndConditionsPage() {
           carefully before using Our Service.
         </p>
 
-        <h1 className="text-3xl font-extrabold mt-10 mb-2">
+        <h1 className="mt-10 mb-2 text-3xl font-extrabold">
           Links to Other Websites
         </h1>
         <p>
@@ -161,7 +162,7 @@ function TermsAndConditionsPage() {
           We strongly advise You to read the terms and conditions and privacy
           policies of any third-party web sites or services that You visit.
         </p>
-        <h1 className="text-3xl font-extrabold mt-10 mb-2">Termination</h1>
+        <h1 className="mt-10 mb-2 text-3xl font-extrabold">Termination</h1>
         <p>
           We may terminate or suspend Your access immediately, without prior
           notice or liability, for any reason whatsoever, including without
@@ -172,7 +173,7 @@ function TermsAndConditionsPage() {
           immediately.
         </p>
 
-        <h1 className="text-3xl font-extrabold mt-10 mb-2">
+        <h1 className="mt-10 mb-2 text-3xl font-extrabold">
           Limitation of Liability
         </h1>
         <p>
@@ -203,7 +204,7 @@ function TermsAndConditionsPage() {
           extent permitted by law.
         </p>
 
-        <h1 className="text-3xl font-extrabold mt-10 mb-2">
+        <h1 className="mt-10 mb-2 text-3xl font-extrabold">
           &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; Disclaimer
         </h1>
         <p>
@@ -245,7 +246,7 @@ function TermsAndConditionsPage() {
           set forth in this section shall be applied to the greatest extent
           enforceable under applicable law.
         </p>
-        <h1 className="text-3xl font-extrabold mt-10 mb-2">Governing Law</h1>
+        <h1 className="mt-10 mb-2 text-3xl font-extrabold">Governing Law</h1>
         <p>
           The laws of the Country, excluding its conflicts of law rules, shall
           govern this Terms and Your use of the Service. Your use of the
@@ -253,14 +254,14 @@ function TermsAndConditionsPage() {
           international laws.
         </p>
 
-        <h1 className="text-3xl font-extrabold mt-10 mb-2">
+        <h1 className="mt-10 mb-2 text-3xl font-extrabold">
           Disputes Resolution
         </h1>
         <p>
           If You have any concern or dispute about the Service, You agree to
           first try to resolve the dispute informally by contacting the Company.
         </p>
-        <h1 className="text-3xl font-extrabold mt-10 mb-2">
+        <h1 className="mt-10 mb-2 text-3xl font-extrabold">
           For European Union (EU) Users
         </h1>
         <p>
@@ -269,7 +270,7 @@ function TermsAndConditionsPage() {
           resident in.
         </p>
 
-        <h1 className="text-3xl font-extrabold mt-10 mb-2">
+        <h1 className="mt-10 mb-2 text-3xl font-extrabold">
           United States Legal Compliance
         </h1>
         <p>
@@ -280,10 +281,10 @@ function TermsAndConditionsPage() {
           States government list of prohibited or restricted parties.
         </p>
 
-        <h1 className="text-3xl font-extrabold mt-10 mb-2">
+        <h1 className="mt-10 mb-2 text-3xl font-extrabold">
           Severability and Waiver
         </h1>
-        <h2 className="text-2xl font-bold mt-6 mb-2">Severability</h2>
+        <h2 className="mt-6 mb-2 text-2xl font-bold">Severability</h2>
         <p>
           If any provision of these Terms is held to be unenforceable or
           invalid, such provision will be changed and interpreted to accomplish
@@ -291,7 +292,7 @@ function TermsAndConditionsPage() {
           applicable law and the remaining provisions will continue in full
           force and effect.
         </p>
-        <h2 className="text-2xl font-bold mt-6 mb-2">Waiver</h2>
+        <h2 className="mt-6 mb-2 text-2xl font-bold">Waiver</h2>
         <p>
           Except as provided herein, the failure to exercise a right or to
           require performance of an obligation under these Terms shall not
@@ -299,7 +300,7 @@ function TermsAndConditionsPage() {
           performance at any time thereafter nor shall the waiver of a breach
           constitute a waiver of any subsequent breach.
         </p>
-        <h1 className="text-3xl font-extrabold mt-10 mb-2">
+        <h1 className="mt-10 mb-2 text-3xl font-extrabold">
           Translation Interpretation
         </h1>
         <p>
@@ -307,7 +308,7 @@ function TermsAndConditionsPage() {
           them available to You on our Service. You agree that the original
           English text shall prevail in the case of a dispute.
         </p>
-        <h1 className="text-3xl font-extrabold mt-10 mb-2">
+        <h1 className="mt-10 mb-2 text-3xl font-extrabold">
           Changes to These Terms and Conditions
         </h1>
         <p>
@@ -323,7 +324,7 @@ function TermsAndConditionsPage() {
           do not agree to the new terms, in whole or in part, please stop using
           the website and the Service.
         </p>
-        <h1 className="text-3xl font-extrabold mt-10 mb-2">Contact Us</h1>
+        <h1 className="mt-10 mb-2 text-3xl font-extrabold">Contact Us</h1>
         <p>
           If you have any questions about these Terms and Conditions, You can
           contact us:
@@ -331,7 +332,7 @@ function TermsAndConditionsPage() {
         <ul className="list-disc pl-4">
           <li>By email: lucas.lmlok@gmail.com</li>
         </ul>
-      </div>
+      </PageWrapper>
     </Container>
   );
 }

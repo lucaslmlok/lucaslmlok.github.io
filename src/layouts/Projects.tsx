@@ -59,7 +59,7 @@ function Projects() {
           </Text>
         </Container>
         <Swiper
-          className="mt-16 mb-10 project-swiper"
+          className="project-swiper mt-16 mb-10"
           spaceBetween={18}
           slidesPerView={1.2}
           centeredSlides

@@ -4,7 +4,7 @@ type Props = {
 };
 
 function Text({ customClass = '', children }: Props) {
-  return <p className={`text-slate-700 text-lg ${customClass}`}>{children}</p>;
+  return <p className={`text-lg text-slate-700 ${customClass}`}>{children}</p>;
 }
 
 export default Text;

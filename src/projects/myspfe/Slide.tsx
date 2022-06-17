@@ -12,16 +12,16 @@ function Slide() {
       rel="noreferrer"
     >
       <div className="project group">
-        <div className="absolute top-[4.5rem] w-full h-1/2 flex justify-center items-start overflow-hidden project-img-fade-container md:top-[5.6rem] md:h-3/5">
+        <div className="project-img-fade-container absolute top-[4.5rem] flex h-1/2 w-full items-start justify-center overflow-hidden md:top-[5.6rem] md:h-3/5">
           <img
             src={screenshot1}
             alt=""
-            className="absolute z-10 top-0 left-4 w-1/2 mt-3 transition-all duration-500 ease-in-out group-hover:left-0"
+            className="absolute top-0 left-4 z-10 mt-3 w-1/2 transition-all duration-500 ease-in-out group-hover:left-0"
           />
           <img
             src={screenshot2}
             alt=""
-            className="absolute top-5 left-1/3 w-1/2 mt-3 transition-all duration-500 ease-in-out group-hover:left-[36%]"
+            className="absolute top-5 left-1/3 mt-3 w-1/2 transition-all duration-500 ease-in-out group-hover:left-[36%]"
           />
         </div>
         <div className="project-tag-container">

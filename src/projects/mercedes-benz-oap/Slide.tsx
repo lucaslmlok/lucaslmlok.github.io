@@ -11,11 +11,11 @@ function Slide() {
       rel="noreferrer"
     >
       <div className="project group">
-        <div className="absolute top-[5.6rem] left-0 w-full h-3/5 flex justify-center items-start overflow-hidden project-img-fade-container">
+        <div className="project-img-fade-container absolute top-[5.6rem] left-0 flex h-3/5 w-full items-start justify-center overflow-hidden">
           <img
             src={screenshot}
             alt=""
-            className="w-2/3 mt-10 transition-all duration-500 ease-in-out group-hover:mt-4 lg:w-1/2 lg:mt-3 lg:group-hover:mt-0"
+            className="mt-10 w-2/3 transition-all duration-500 ease-in-out group-hover:mt-4 lg:mt-3 lg:w-1/2 lg:group-hover:mt-0"
           />
         </div>
         <div className="project-tag-container">

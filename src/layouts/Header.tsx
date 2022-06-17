@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { IoMenu } from 'react-icons/io5';
 import { Link } from 'react-scroll';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Container from '../components/Container';
 import useOutside from '../hooks/useOutside';
 import * as Scroll from '../helpers/scroll';
@@ -11,22 +12,32 @@ function Header() {
   const [menuOpened, setMenuOpened] = useState(false);
   const wrapperRef = useRef<HTMLElement>(null);
   useOutside(wrapperRef, () => setMenuOpened(false));
+  const { pathname } = useLocation();
+  const navigate = useNavigate();
 
   const bgColor = menuOpened ? 'bg-white' : 'bg-white/90';
+
+  const onLogoClick = () => {
+    if (pathname === '/') {
+      Scroll.scrollToTop();
+    } else {
+      navigate('../', { replace: true });
+    }
+  };
 
   return (
     <header
       ref={wrapperRef}
-      className={`fixed z-30 top-0 left-0 w-full backdrop-blur-lg shadow-sm ${bgColor}`}
+      className={`fixed top-0 left-0 z-30 w-full shadow-sm backdrop-blur-lg ${bgColor}`}
     >
       <Container>
-        <div className="flex justify-between items-center py-4 sm:py-5">
+        <div className="flex items-center justify-between py-4 sm:py-5">
           <button
             type="button"
-            onClick={Scroll.scrollToTop}
+            onClick={onLogoClick}
             className="cursor-pointer"
           >
-            <div className="group flex items-center gap-x-4 text-sky-500 font-black text-2xl">
+            <div className="group flex items-center gap-x-4 text-2xl font-black text-sky-500">
               <img
                 className="h-10 transition-transform duration-500 group-hover:rotate-12"
                 src={Logo}
@@ -89,7 +100,7 @@ function Header() {
       </Container>
 
       <CSSTransition in={menuOpened} timeout={400} classNames="mobile-menu">
-        <div className="absolute w-full bg-white/100 backdrop-blur-lg shadow-sm max-h-0 overflow-hidden">
+        <div className="absolute max-h-0 w-full overflow-hidden bg-white/100 shadow-sm backdrop-blur-lg">
           <Container>
             <nav className="mb-7">
               <ul className="text-lg font-semibold tracking-tight text-slate-700">

@@ -7,7 +7,7 @@
 
 @layer components {
   .project {
-    @apply relative flex flex-col justify-end items-start bg-blue-50 h-[32rem] px-6 py-5 rounded-3xl text-left overflow-hidden select-none
+    @apply relative flex h-[32rem] select-none flex-col items-start justify-end overflow-hidden rounded-3xl bg-blue-50 px-6 py-5 text-left
         md:h-[38rem] md:px-8 md:py-7;
   }
 
@@ -16,20 +16,20 @@
   }
 
   .project-tag {
-    @apply mr-2 mb-2 inline-flex items-center bg-blue-600/90 text-white font-light tracking-wide text-xs px-3 py-2 rounded-xl
+    @apply mr-2 mb-2 inline-flex items-center rounded-xl bg-blue-600/90 px-3 py-2 text-xs font-light tracking-wide text-white
         md:mr-4 md:text-sm;
   }
 
   .project-header {
-    @apply font-semibold text-lg text-slate-800;
+    @apply text-lg font-semibold text-slate-800;
   }
 
   .project-title {
-    @apply font-extrabold text-xl text-slate-800/80 tracking-tight my-2;
+    @apply my-2 text-xl font-extrabold tracking-tight text-slate-800/80;
   }
 
   .project-view {
-    @apply inline-flex items-center text-slate-600 overflow-hidden -mt-5 opacity-0 transition-all duration-500 ease-in-out group-hover:mt-0 group-hover:opacity-100;
+    @apply -mt-5 inline-flex items-center overflow-hidden text-slate-600 opacity-0 transition-all duration-500 ease-in-out group-hover:mt-0 group-hover:opacity-100;
   }
 
   .project-img-fade-container {
@@ -45,8 +45,8 @@
   }
 
   .profile {
-    @apply relative w-full pt-[125%] overflow-hidden rounded-[4rem] border-2 border-blue-500 rotate-3
-        after:content-[''] after:block after:absolute after:inset-0 after:w-full after:h-full after:bg-blue-400/30;
+    @apply relative w-full rotate-3 overflow-hidden rounded-[4rem] border-2 border-blue-500 pt-[125%]
+        after:absolute after:inset-0 after:block after:h-full after:w-full after:bg-blue-400/30 after:content-[''];
   }
 
   @keyframes profile-move {
@@ -64,10 +64,10 @@
   }
 
   .button {
-    @apply relative w-full text-white leading-6 font-medium py-3 px-4 rounded-xl shadow-md overflow-hidden sm:w-auto
-        before:content-[""] before:block before:absolute before:z-10 before:inset-0 before:w-full before:h-full
-        before:opacity-0 before:transition-opacity before:ease-in-out before:duration-300
-        hover:before:opacity-100;
+    @apply relative w-full overflow-hidden rounded-xl py-3 px-4 font-medium leading-6 text-white shadow-md before:absolute
+        before:inset-0 before:z-10 before:block before:h-full before:w-full before:opacity-0 before:transition-opacity
+        before:duration-300 before:ease-in-out before:content-[""] hover:before:opacity-100
+        sm:w-auto;
   }
 
   .button-inner {
@@ -102,6 +102,46 @@
   .ping {
     @apply animate-ping;
     animation-duration: 1.75s;
+  }
+
+  .details {
+    @apply flex flex-col gap-x-4 lg:flex-row lg:items-start;
+  }
+
+  .details-content {
+    @apply lg:w-1/2;
+  }
+
+  .details-company {
+    @apply text-2xl font-semibold text-slate-600;
+  }
+
+  .details-tag {
+    @apply my-6;
+  }
+
+  .details-title {
+    @apply my-4 text-3xl font-extrabold tracking-tight text-slate-800;
+  }
+
+  .details-subtitle {
+    @apply mt-12 text-2xl font-bold tracking-tight text-slate-800;
+  }
+
+  .work-part {
+    @apply mt-6 mb-10;
+  }
+
+  .work-subtitle {
+    @apply mb-4 -ml-1 text-xl font-bold tracking-tight text-slate-600;
+  }
+
+  .details-list {
+    @apply list-disc pl-5 text-lg text-slate-700;
+  }
+
+  .details-list li {
+    @apply my-2.5;
   }
 
   @media (min-width: 1024px) {

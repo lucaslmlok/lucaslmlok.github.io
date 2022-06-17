@@ -1,6 +1,7 @@
 import { ToastContainer } from 'react-toastify';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './layouts/Header';
+import AnimationLayout from './components/AnimatedLayout';
 import HomePage from './pages/HomePage';
 import TermsAndConditionsPage from './pages/TermsAndConditionsPage';
 import ProjectDetailsPage from './pages/ProjectDetailsPage';
@@ -21,16 +22,21 @@ function App() {
         draggable
         pauseOnHover
       />
-      <Header />
-      <main>
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Header />
+        <main className="overflow-x-hidden">
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/terms" element={<TermsAndConditionsPage />} />
-            <Route path="/project" element={<ProjectDetailsPage />} />
+            <Route element={<AnimationLayout />}>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/terms" element={<TermsAndConditionsPage />} />
+              <Route
+                path="/project/:project"
+                element={<ProjectDetailsPage />}
+              />
+            </Route>
           </Routes>
-        </BrowserRouter>
-      </main>
+        </main>
+      </BrowserRouter>
     </div>
   );
 }

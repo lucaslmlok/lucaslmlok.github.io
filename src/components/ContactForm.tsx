@@ -40,10 +40,10 @@ function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="bg-white rounded-3xl w-full max-w-3xl text-left px-6 py-8 flex flex-col gap-y-8 lg:px-10 lg:py-10"
+      className="flex w-full max-w-3xl flex-col gap-y-8 rounded-3xl bg-white px-6 py-8 text-left lg:px-10 lg:py-10"
     >
       <div className="">
-        <label htmlFor="name" className="block mb-1 font-medium text-lg">
+        <label htmlFor="name" className="mb-1 block text-lg font-medium">
           Name
           <input
             type="text"
@@ -57,7 +57,7 @@ function ContactForm() {
         </label>
       </div>
       <div className="">
-        <label htmlFor="email" className="block mb-1 font-medium text-lg">
+        <label htmlFor="email" className="mb-1 block text-lg font-medium">
           Email
           <input
             type="email"
@@ -71,7 +71,7 @@ function ContactForm() {
         </label>
       </div>
       <div className="">
-        <label htmlFor="message" className="block mb-1 font-medium text-lg">
+        <label htmlFor="message" className="mb-1 block text-lg font-medium">
           Message
           <textarea
             id="message"

@@ -4,7 +4,7 @@ type Props = {
 
 function Title({ children }: Props) {
   return (
-    <h2 className="flex justify-center items-center my-6 text-3xl sm:text-4xl text-slate-800 font-extrabold tracking-tight">
+    <h2 className="my-6 flex items-center justify-center text-3xl font-extrabold tracking-tight text-slate-800 sm:text-4xl">
       {children}
     </h2>
   );

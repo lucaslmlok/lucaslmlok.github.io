@@ -19,15 +19,15 @@ function Intro() {
   return (
     <Section customClass="intro">
       <Container>
-        <div className="mt-12 flex flex-col items-start justify-between text-left tracking-tight lg:flex-row lg:mt-20">
+        <div className="mt-12 flex flex-col items-start justify-between text-left tracking-tight lg:mt-20 lg:flex-row">
           <div className="mt-10">
             <Text customClass="text-slate-600/90 font-medium text-xl sm:text-2xl">
               Hi there, I&apos;m Lucas Lo 👋
             </Text>
-            <h1 className="text-slate-900 font-extrabold text-4xl my-4 leading-[3rem] sm:text-5xl sm:my-6 xl:text-6xl">
+            <h1 className="my-4 text-4xl font-extrabold leading-[3rem] text-slate-900 sm:my-6 sm:text-5xl xl:text-6xl">
               Front-end Developer
             </h1>
-            <div className="text-slate-600/90 font-medium text-2xl !leading-relaxed max-w-xl sm:text-3xl">
+            <div className="max-w-xl text-2xl font-medium !leading-relaxed text-slate-600/90 sm:text-3xl">
               Specialized in creating well-polished user interfaces
               <br />
               using <Typewriter options={typewriterOptions} />
@@ -52,7 +52,7 @@ function Intro() {
             </div>
           </div>
 
-          <div className="flex-1 w-[90%] max-w-[24rem] mt-20 self-center lg:mt-0 lg:w-auto lg:self-auto">
+          <div className="mt-20 w-[90%] max-w-[24rem] flex-1 self-center lg:mt-0 lg:w-auto lg:self-auto">
             <div className="relative -translate-x-3 sm:translate-x-0">
               <div className="absolute inset-0 translate-x-6 translate-y-4 sm:translate-x-10">
                 <div className="profile after:content-none" />
@@ -60,7 +60,7 @@ function Intro() {
               <div className="profile-img">
                 <div className="profile">
                   <img
-                    className="absolute inset-0 w-full h-full object-cover scale-110 brightness-110 contrast-[1.1]"
+                    className="absolute inset-0 h-full w-full scale-110 object-cover brightness-110 contrast-[1.1]"
                     src={Profile}
                     alt=""
                   />
