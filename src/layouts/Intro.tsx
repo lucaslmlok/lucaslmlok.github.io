@@ -5,7 +5,7 @@ import Section from '../components/Section';
 import Text from '../components/Text';
 import Button from '../components/Button';
 import * as Scroll from '../helpers/scroll';
-import Profile from '../assets/images/profile.jpg';
+// import Profile from '../assets/images/profile.jpg';
 
 const typewriterOptions = {
   strings: ['React.', 'Next.js.', 'Angular.', 'Tailwind CSS.'],
@@ -22,7 +22,7 @@ function Intro() {
         <div className="mt-12 flex flex-col items-start justify-between text-left tracking-tight lg:flex-row lg:mt-20">
           <div className="mt-10">
             <Text customClass="text-slate-600/90 font-medium text-xl sm:text-2xl">
-              Hello there, I&apos;m Lucas Lo 👋
+              Hi there, I&apos;m Lucas Lo 👋
             </Text>
             <h1 className="text-slate-900 font-extrabold text-4xl my-4 leading-[3rem] sm:text-5xl sm:my-6 xl:text-6xl">
               Front-end Developer
@@ -61,7 +61,7 @@ function Intro() {
                 <div className="profile">
                   <img
                     className="absolute inset-0 w-full h-full object-cover scale-110 brightness-110 contrast-[1.1]"
-                    src={Profile}
+                    src=""
                     alt=""
                   />
                 </div>
