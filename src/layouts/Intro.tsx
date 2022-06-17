@@ -22,7 +22,7 @@ function Intro() {
         <div className="mt-12 flex flex-col items-start justify-between text-left tracking-tight lg:flex-row lg:mt-20">
           <div className="mt-10">
             <Text customClass="text-slate-600/90 font-medium text-xl sm:text-2xl">
-              Hi there, I&apos;m Lucas Lo 👋
+              Hello there, I&apos;m Lucas Lo 👋
             </Text>
             <h1 className="text-slate-900 font-extrabold text-4xl my-4 leading-[3rem] sm:text-5xl sm:my-6 xl:text-6xl">
               Front-end Developer
