@@ -31,5 +31,12 @@ module.exports = {
     'react/jsx-one-expression-per-line': 'off',
     'comma-dangle': 'off',
     '@typescript-eslint/comma-dangle': 'off',
+    'linebreak-style': 0,
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
   },
 };
