@@ -1,6 +1,6 @@
 import Container from '../components/Container';
 
-function TermsAndConditions() {
+function TermsAndConditionsPage() {
   return (
     <Container>
       <div className="pt-2 pb-16">
@@ -336,4 +336,4 @@ function TermsAndConditions() {
   );
 }
 
-export default TermsAndConditions;
+export default TermsAndConditionsPage;

@@ -9,11 +9,7 @@ function Footer() {
         @{year} ManLok Lo
       </li>
       <li>
-        <Link
-          to="/terms-and-conditions"
-          target="_blank"
-          className="hover:text-slate-900"
-        >
+        <Link to="/terms" target="_blank" className="hover:text-slate-900">
           Terms and Conditions
         </Link>
       </li>

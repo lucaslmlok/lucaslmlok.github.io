@@ -1,9 +1,9 @@
 import { ToastContainer } from 'react-toastify';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './layouts/Header';
-import Intro from './layouts/Intro';
-import Projects from './layouts/Projects';
-import Skills from './layouts/Skills';
-import Contact from './layouts/Contact';
+import HomePage from './pages/HomePage';
+import TermsAndConditionsPage from './pages/TermsAndConditionsPage';
+import ProjectDetailsPage from './pages/ProjectDetailsPage';
 
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -23,10 +23,13 @@ function App() {
       />
       <Header />
       <main>
-        <Intro />
-        <Projects />
-        <Skills />
-        <Contact />
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/terms" element={<TermsAndConditionsPage />} />
+            <Route path="/project" element={<ProjectDetailsPage />} />
+          </Routes>
+        </BrowserRouter>
       </main>
     </div>
   );

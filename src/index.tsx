@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import App from './App';
-import TermsAndConditions from './pages/TermsAndConditions';
-import * as Email from './helpers/email';
 import reportWebVitals from './reportWebVitals';
+import App from './App';
+import * as Email from './helpers/email';
 import 'swiper/css';
 import './index.css';
 
@@ -12,12 +10,7 @@ Email.initEmail();
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
-      </Routes>
-    </BrowserRouter>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
