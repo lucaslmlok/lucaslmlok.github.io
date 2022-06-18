@@ -1,16 +1,14 @@
 import { BiChevronRight } from 'react-icons/bi';
 import { FaAppStore } from 'react-icons/fa';
 import { RiAndroidLine } from 'react-icons/ri';
+import { Link } from 'react-router-dom';
 import screenshot1 from '../../assets/images/projects/myspfe_1.png';
 import screenshot2 from '../../assets/images/projects/myspfe_2.png';
+import PROJECTS from '../../config/projects';
 
 function Slide() {
   return (
-    <a
-      href="https://apps.apple.com/app/myspfe/id1552990622?l=en"
-      target="_blank"
-      rel="noreferrer"
-    >
+    <Link to={`/project/${PROJECTS.HKECDS}`}>
       <div className="project group">
         <div className="project-img-fade-container absolute top-[4.5rem] flex h-1/2 w-full items-start justify-center overflow-hidden md:top-[5.6rem] md:h-3/5">
           <img
@@ -44,7 +42,7 @@ function Slide() {
           view the app <BiChevronRight size={20} className="mt-[0.1rem]" />
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
 

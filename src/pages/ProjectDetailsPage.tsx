@@ -8,6 +8,7 @@ import HyundaiClickToBuyDetails from '../projects/hyundai-click-to-buy/Details';
 import MercedesBenzOapDetails from '../projects/mercedes-benz-oap/Details';
 import SpaceTownGoDetails from '../projects/space-town-go/Details';
 import CityuCSDetails from '../projects/cityu-cs/Details';
+import HkecdsDetails from '../projects/hkecds/Details';
 
 const renderProject = (project: string | undefined) => {
   switch (project) {
@@ -19,6 +20,8 @@ const renderProject = (project: string | undefined) => {
       return <SpaceTownGoDetails />;
     case PROJECTS.CITYU_CS:
       return <CityuCSDetails />;
+    case PROJECTS.HKECDS:
+      return <HkecdsDetails />;
     default:
       return <Navigate to="/" replace />;
   }

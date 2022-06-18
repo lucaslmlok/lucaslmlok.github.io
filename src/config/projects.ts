@@ -3,6 +3,7 @@ const PROJECTS = {
   MERCEDES_BENZ: 'mercedes-benz-oap',
   SPACE_TOWN_GO: 'space-town-go',
   CITYU_CS: 'cityu-cs',
+  HKECDS: 'hkecds',
   BOOKWORKS: 'book-works',
 };
 

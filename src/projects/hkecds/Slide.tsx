@@ -1,16 +1,14 @@
 import { BiChevronRight } from 'react-icons/bi';
 import { FaAppStore } from 'react-icons/fa';
 import { GrGamepad } from 'react-icons/gr';
+import { Link } from 'react-router-dom';
 import screenshot from '../../assets/images/projects/hkecds.png';
 import icon from '../../assets/images/projects/hkecds_icon.png';
+import PROJECTS from '../../config/projects';
 
 function Slide() {
   return (
-    <a
-      href="https://apps.apple.com/app/hkecds/id1531076625?l=en"
-      target="_blank"
-      rel="noreferrer"
-    >
+    <Link to={`/project/${PROJECTS.HKECDS}`}>
       <div className="project group">
         <img src={icon} alt="" className="absolute top-20 left-4 z-10 w-36" />
         <img
@@ -36,7 +34,7 @@ function Slide() {
           view the app <BiChevronRight size={20} className="mt-[0.1rem]" />
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
 
