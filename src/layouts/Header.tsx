@@ -43,7 +43,7 @@ function Header() {
                 src={Logo}
                 alt=""
               />
-              LUCAS
+              {/* LUCAS */}
             </div>
           </button>
           <nav className="hidden sm:block">

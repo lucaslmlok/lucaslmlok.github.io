@@ -12,13 +12,9 @@ function Slide() {
       rel="noreferrer"
     >
       <div className="project group">
+        <img src={icon} alt="" className="absolute top-20 left-4 z-10 w-36" />
         <img
           src={screenshot}
-          alt=""
-          className="absolute top-20 left-4 z-10 w-36"
-        />
-        <img
-          src={icon}
           alt=""
           className="absolute top-24 left-1/2 w-11/12 -translate-x-1/2 transition-transform duration-500 ease-in-out group-hover:scale-105"
         />
