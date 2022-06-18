@@ -8,7 +8,7 @@ import PROJECTS from '../../config/projects';
 
 function Slide() {
   return (
-    <Link to={`/project/${PROJECTS.HKECDS}`}>
+    <Link to={`/project/${PROJECTS.MYSPFE}`}>
       <div className="project group">
         <div className="project-img-fade-container absolute top-[4.5rem] flex h-1/2 w-full items-start justify-center overflow-hidden md:top-[5.6rem] md:h-3/5">
           <img

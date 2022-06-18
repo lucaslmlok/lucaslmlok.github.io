@@ -7,6 +7,7 @@ const PROJECTS = {
   UPBEAT: 'upbeat',
   BOOKWORKS: 'book-works',
   HAD: 'had',
+  MYSPFE: 'myspfe',
 };
 
 export default PROJECTS;

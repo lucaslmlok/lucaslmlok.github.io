@@ -12,6 +12,7 @@ import HkecdsDetails from '../projects/hkecds/Details';
 import UpbeatDetails from '../projects/upbeat/Details';
 import BookworksDetails from '../projects/book-works/Details';
 import HadDetails from '../projects/had/Details';
+import MySpfeDetails from '../projects/myspfe/Details';
 
 const renderProject = (project: string | undefined) => {
   switch (project) {
@@ -31,6 +32,8 @@ const renderProject = (project: string | undefined) => {
       return <BookworksDetails />;
     case PROJECTS.HAD:
       return <HadDetails />;
+    case PROJECTS.MYSPFE:
+      return <MySpfeDetails />;
     default:
       return <Navigate to="/" replace />;
   }
