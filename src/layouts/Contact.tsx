@@ -40,6 +40,7 @@ function Contact() {
                       target="_blank"
                       rel="noreferrer"
                       className="flex items-center justify-center rounded-full bg-white p-4 text-slate-700/60 transition-colors hover:text-indigo-700"
+                      aria-label="email"
                     >
                       <HiOutlineMail size="1.75em" />
                     </a>
@@ -48,6 +49,7 @@ function Contact() {
                       target="_blank"
                       rel="noreferrer"
                       className="flex items-center justify-center rounded-full bg-white p-4 text-slate-700/60 transition-colors hover:text-slate-700"
+                      aria-label="github"
                     >
                       <FiGithub size="1.75em" />
                     </a>

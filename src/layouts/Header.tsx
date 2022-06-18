@@ -39,7 +39,7 @@ function Header() {
           >
             <div className="group flex items-center gap-x-4 text-2xl font-black text-sky-500">
               <img
-                className="h-10 transition-transform duration-500 group-hover:rotate-12"
+                className="h-10 w-6 transition-transform duration-500 group-hover:rotate-12"
                 src={Logo}
                 alt=""
               />
@@ -92,6 +92,7 @@ function Header() {
           <button
             type="button"
             className="text-blue-600 sm:hidden"
+            aria-label="Menu Button"
             onClick={() => setMenuOpened(!menuOpened)}
           >
             <IoMenu size={32} />
