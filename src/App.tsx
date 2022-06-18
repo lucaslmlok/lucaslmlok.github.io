@@ -1,5 +1,6 @@
+// eslint-disable-next-line object-curly-newline
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './layouts/Header';
 import AnimationLayout from './components/AnimatedLayout';
 import HomePage from './pages/HomePage';
@@ -33,6 +34,7 @@ function App() {
                 path="/project/:project"
                 element={<ProjectDetailsPage />}
               />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Route>
           </Routes>
         </main>

@@ -1,13 +1,19 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Container from '../components/Container';
 import PageWrapper from '../components/PageWrapper';
 
 function TermsAndConditionsPage() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <Container>
       <PageWrapper>
-        <h1 className="mt-10 mb-2 text-3xl font-extrabold">
-          Terms and Conditions
-        </h1>
+        <h1 className="my-2 text-3xl font-extrabold">Terms and Conditions</h1>
         <p>Last updated: March 02, 2022</p>
         <p>
           Please read these terms and conditions carefully before using Our

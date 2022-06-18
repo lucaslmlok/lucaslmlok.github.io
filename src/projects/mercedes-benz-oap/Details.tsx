@@ -1,21 +1,24 @@
 import { RiListSettingsLine } from 'react-icons/ri';
 import { VscGlobe } from 'react-icons/vsc';
 import { FaAngleRight } from 'react-icons/fa';
+import { BiCalendar } from 'react-icons/bi';
 import Text from '../../components/Text';
-import screenshot from '../../assets/images/projects/hyundai_click_to_buy.png';
+import screenshot from '../../assets/images/projects/mercedes_benz.png';
 import IconAngular from '../../assets/images/skills/angular.svg';
 import IconPhp from '../../assets/images/skills/php.svg';
+import IconBootstrap from '../../assets/images/skills/bootstrap.svg';
+import IconChartjs from '../../assets/images/skills/chartjs.svg';
 import { SkillItem } from '../../layouts/Skills';
 import Button from '../../components/Button';
 
-const url = 'https://clicktobuy.hyundai.com.hk/';
+const url = 'https://www.mb.zungfu.com/aftersales/2/front/en/';
 
 function Details() {
   return (
     <div className="details">
       <div className="details-content">
-        <h2 className="details-company">Hyundai Hong Kong</h2>
-        <h1 className="details-title">Click to Buy - Online Car Buying</h1>
+        <h2 className="details-company">Mercedes-Benz Hong Kong</h2>
+        <h1 className="details-title">Online Aftersales Platform</h1>
 
         <div className="details-tag">
           <span className="project-tag">
@@ -26,13 +29,22 @@ function Details() {
             <RiListSettingsLine size={20} className="mr-1" />
             cms
           </span>
+          <span className="project-tag">
+            <BiCalendar size={20} className="mr-1" />
+            booking system
+          </span>
         </div>
 
         <Text customClass="my-6">
-          A online platform that let customer handle the entire car buying
-          process from configuring car model, color and any other options to
-          pickup location and online deposit payment, in order to provide a more
-          convenient, simple and secure experience for customers.
+          The website provides a sophisticated booking system of maintenance and
+          repair for wide ranging Mercedes-Benz cars. Customers can browse, book
+          and pay various services with selecting their preferable car models,
+          repair centers, booking time.
+        </Text>
+
+        <Text customClass="my-6">
+          Membership, credit System and other promotion features are introduced
+          to help create strong customer relationships.
         </Text>
 
         <h3 className="details-subtitle">My Work Included:</h3>
@@ -40,15 +52,14 @@ function Details() {
           <li className="work-part">
             <div className="work-subtitle">💻 Website:</div>
             <ul className="details-list">
-              <li>Transformed design templates to interactive website</li>
               <li>
-                Handled the session storage throughout the whole buying process
-                to ensure a consistent and reliable state for customers
+                Developed websites followed Mercedes-Benz style and design
               </li>
               <li>
-                Integrated payment gateway to provide a smooth payment
-                experience
+                Built a service booking system with available service centers,
+                time and service advisor dynamically configured by the CMS
               </li>
+              <li>Contributed to the membership and credit system</li>
             </ul>
           </li>
 
@@ -56,13 +67,16 @@ function Details() {
             <div className="work-subtitle">🧑‍💼 Content Management System:</div>
             <ul className="details-list">
               <li>
-                Developed an elegant admin portal for Hyundai staff to handle
-                orders and enquires
+                Developed CMS for staff to manage service appointment, orders,
+                payment and recipes
               </li>
-              <li>Generated quotation and other documents in PDF format</li>
               <li>
-                Set up email notifications for different departments of Hyundai
-                Staff to deal with numerous daily tasks
+                Introduced interactive dashboard with charts for data
+                visualization and analysis
+              </li>
+              <li>
+                Provided a booking admin system to configure the availability of
+                any specific service centers and corresponding advisors
               </li>
             </ul>
           </li>
@@ -71,6 +85,8 @@ function Details() {
         <Text customClass="mt-12 font-medium">Powered by:</Text>
         <ul className="my-4 flex flex-wrap gap-4">
           <SkillItem size="small" title="Angular" icon={IconAngular} />
+          <SkillItem size="small" title="Bootstrap" icon={IconBootstrap} />
+          <SkillItem size="small" title="Chart.js" icon={IconChartjs} />
           <SkillItem size="small" title="PHP" icon={IconPhp} />
         </ul>
 
@@ -93,7 +109,7 @@ function Details() {
       <div className="flex-1">
         <a href={url} target="_blank" rel="noreferrer">
           <img
-            className="w-full"
+            className="mx-auto w-full max-w-[20rem]"
             src={screenshot}
             alt="Hyundai Hong Kong Click to Buy"
           />

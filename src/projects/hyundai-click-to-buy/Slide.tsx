@@ -3,10 +3,11 @@ import { VscGlobe } from 'react-icons/vsc';
 import { RiListSettingsLine } from 'react-icons/ri';
 import { BiChevronRight } from 'react-icons/bi';
 import screenshot from '../../assets/images/projects/hyundai_click_to_buy.png';
+import PROJECTS from '../../config/projects';
 
 function Slide() {
   return (
-    <Link to="/project/hyundai-click-to-buy">
+    <Link to={`/project/${PROJECTS.HYUNDAI}`}>
       <div className="project group">
         <img
           src={screenshot}

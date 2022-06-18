@@ -1,15 +1,20 @@
 import { useEffect } from 'react';
-import { useLocation, useParams } from 'react-router-dom';
+import { Navigate, useLocation, useParams } from 'react-router-dom';
 import Container from '../components/Container';
 import PageWrapper from '../components/PageWrapper';
+import PROJECTS from '../config/projects';
+
 import HyundaiClickToBuyDetails from '../projects/hyundai-click-to-buy/Details';
+import MercedesBenzOapDetails from '../projects/mercedes-benz-oap/Details';
 
 const renderProject = (project: string | undefined) => {
   switch (project) {
-    case 'hyundai-click-to-buy':
+    case PROJECTS.HYUNDAI:
       return <HyundaiClickToBuyDetails />;
+    case PROJECTS.MERCEDES_BENZ:
+      return <MercedesBenzOapDetails />;
     default:
-      return <div>Project Not Found</div>;
+      return <Navigate to="/" replace />;
   }
 };
 

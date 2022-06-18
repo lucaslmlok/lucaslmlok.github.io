@@ -1,15 +1,13 @@
 import { BiCalendar, BiChevronRight } from 'react-icons/bi';
 import { RiListSettingsLine } from 'react-icons/ri';
 import { VscGlobe } from 'react-icons/vsc';
+import { Link } from 'react-router-dom';
 import screenshot from '../../assets/images/projects/mercedes_benz.png';
+import PROJECTS from '../../config/projects';
 
 function Slide() {
   return (
-    <a
-      href="https://www.mb.zungfu.com/aftersales/2/front/en/"
-      target="_blank"
-      rel="noreferrer"
-    >
+    <Link to={`/project/${PROJECTS.MERCEDES_BENZ}`}>
       <div className="project group">
         <div className="project-img-fade-container absolute top-[5.6rem] left-0 flex h-3/5 w-full items-start justify-center overflow-hidden">
           <img
@@ -38,7 +36,7 @@ function Slide() {
           view the site <BiChevronRight size={20} className="mt-[0.1rem]" />
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
 

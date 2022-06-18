@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { IoMenu } from 'react-icons/io5';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Container from '../components/Container';
 import useOutside from '../hooks/useOutside';
@@ -49,7 +49,7 @@ function Header() {
           <nav className="hidden sm:block">
             <ul className="flex items-center gap-x-10 text-lg font-medium text-slate-600 md:gap-x-12 lg:md:gap-x-16 xl:gap-x-20">
               <li>
-                <Link
+                <ScrollLink
                   className="cursor-pointer"
                   activeClass="text-blue-600 font-semibold"
                   to="projects"
@@ -59,10 +59,10 @@ function Header() {
                   offset={-150}
                 >
                   Projects
-                </Link>
+                </ScrollLink>
               </li>
               <li>
-                <Link
+                <ScrollLink
                   className="cursor-pointer"
                   activeClass="text-sky-600 font-semibold"
                   to="skills"
@@ -72,10 +72,10 @@ function Header() {
                   offset={-60}
                 >
                   Tech Skills
-                </Link>
+                </ScrollLink>
               </li>
               <li>
-                <Link
+                <ScrollLink
                   className="cursor-pointer"
                   activeClass="text-cyan-600 font-semibold"
                   to="contact"
@@ -85,7 +85,7 @@ function Header() {
                   offset={40}
                 >
                   Contact
-                </Link>
+                </ScrollLink>
               </li>
             </ul>
           </nav>
