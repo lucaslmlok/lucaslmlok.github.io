@@ -91,7 +91,12 @@ function Details() {
       </div>
 
       <div className="flex-1">
-        <a href={url} target="_blank" rel="noreferrer">
+        <a
+          className="transition-opacity hover:opacity-90"
+          href={url}
+          target="_blank"
+          rel="noreferrer"
+        >
           <img
             className="w-full"
             src={screenshot}

@@ -6,6 +6,7 @@ import PROJECTS from '../config/projects';
 
 import HyundaiClickToBuyDetails from '../projects/hyundai-click-to-buy/Details';
 import MercedesBenzOapDetails from '../projects/mercedes-benz-oap/Details';
+import SpaceTownGoDetails from '../projects/space-town-go/Details';
 
 const renderProject = (project: string | undefined) => {
   switch (project) {
@@ -13,6 +14,8 @@ const renderProject = (project: string | undefined) => {
       return <HyundaiClickToBuyDetails />;
     case PROJECTS.MERCEDES_BENZ:
       return <MercedesBenzOapDetails />;
+    case PROJECTS.SPACE_TOWN_GO:
+      return <SpaceTownGoDetails />;
     default:
       return <Navigate to="/" replace />;
   }

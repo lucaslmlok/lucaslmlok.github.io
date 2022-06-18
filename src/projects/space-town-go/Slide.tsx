@@ -2,16 +2,14 @@ import { BiChevronRight } from 'react-icons/bi';
 import { FiBookOpen } from 'react-icons/fi';
 import { GrGamepad } from 'react-icons/gr';
 import { VscGlobe } from 'react-icons/vsc';
+import { Link } from 'react-router-dom';
 import screenshot1 from '../../assets/images/projects/spacetown_1.png';
 import screenshot2 from '../../assets/images/projects/spacetown_2.png';
+import PROJECTS from '../../config/projects';
 
 function Slide() {
   return (
-    <a
-      href="https://nets.edb.hkedcity.net/spacetowngo/"
-      target="_blank"
-      rel="noreferrer"
-    >
+    <Link to={`/project/${PROJECTS.SPACE_TOWN_GO}`}>
       <div className="project group">
         <img
           src={screenshot1}
@@ -43,7 +41,7 @@ function Slide() {
           view the site <BiChevronRight size={20} className="mt-[0.1rem]" />
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
 

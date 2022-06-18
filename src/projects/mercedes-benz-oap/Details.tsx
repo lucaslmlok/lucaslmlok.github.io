@@ -107,11 +107,16 @@ function Details() {
       </div>
 
       <div className="flex-1">
-        <a href={url} target="_blank" rel="noreferrer">
+        <a
+          className="transition-opacity hover:opacity-90"
+          href={url}
+          target="_blank"
+          rel="noreferrer"
+        >
           <img
-            className="mx-auto w-full max-w-[20rem]"
+            className="mx-auto w-[60%]"
             src={screenshot}
-            alt="Hyundai Hong Kong Click to Buy"
+            alt="Mercedes-Benz Hong Kong Online Aftersales Platform"
           />
         </a>
       </div>
