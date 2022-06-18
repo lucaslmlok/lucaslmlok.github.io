@@ -9,6 +9,7 @@ import MercedesBenzOapDetails from '../projects/mercedes-benz-oap/Details';
 import SpaceTownGoDetails from '../projects/space-town-go/Details';
 import CityuCSDetails from '../projects/cityu-cs/Details';
 import HkecdsDetails from '../projects/hkecds/Details';
+import UpbeatDetails from '../projects/upbeat/Details';
 
 const renderProject = (project: string | undefined) => {
   switch (project) {
@@ -22,6 +23,8 @@ const renderProject = (project: string | undefined) => {
       return <CityuCSDetails />;
     case PROJECTS.HKECDS:
       return <HkecdsDetails />;
+    case PROJECTS.UPBEAT:
+      return <UpbeatDetails />;
     default:
       return <Navigate to="/" replace />;
   }

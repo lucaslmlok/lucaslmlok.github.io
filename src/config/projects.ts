@@ -4,6 +4,7 @@ const PROJECTS = {
   SPACE_TOWN_GO: 'space-town-go',
   CITYU_CS: 'cityu-cs',
   HKECDS: 'hkecds',
+  UPBEAT: 'upbeat',
   BOOKWORKS: 'book-works',
 };
 
