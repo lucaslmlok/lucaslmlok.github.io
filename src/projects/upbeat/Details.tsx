@@ -1,7 +1,7 @@
 import { VscGlobe } from 'react-icons/vsc';
 import { FaAngleRight } from 'react-icons/fa';
 import Text from '../../components/Text';
-import screenshot from '../../assets/images/projects/upbeat.png';
+import screenshot from '../../assets/images/projects/upbeat.webp';
 import IconPhp from '../../assets/images/skills/php.svg';
 import IconJquery from '../../assets/images/skills/jquery.svg';
 import IconSass from '../../assets/images/skills/sass.svg';

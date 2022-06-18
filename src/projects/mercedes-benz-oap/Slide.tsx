@@ -2,7 +2,7 @@ import { BiCalendar, BiChevronRight } from 'react-icons/bi';
 import { RiListSettingsLine } from 'react-icons/ri';
 import { VscGlobe } from 'react-icons/vsc';
 import { Link } from 'react-router-dom';
-import screenshot from '../../assets/images/projects/mercedes_benz.png';
+import screenshot from '../../assets/images/projects/mercedes_benz.webp';
 import PROJECTS from '../../config/projects';
 
 function Slide() {

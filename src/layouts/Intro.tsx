@@ -5,7 +5,7 @@ import Section from '../components/Section';
 import Text from '../components/Text';
 import Button from '../components/Button';
 import * as Scroll from '../helpers/scroll';
-import Profile from '../assets/images/profile.jpg';
+import Profile from '../assets/images/profile.webp';
 
 const typewriterOptions = {
   strings: ['React.', 'Next.js.', 'Angular.', 'Tailwind CSS.'],

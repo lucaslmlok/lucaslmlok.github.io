@@ -1,8 +1,8 @@
 import { GrGamepad } from 'react-icons/gr';
 import { FaAngleRight, FaAppStore } from 'react-icons/fa';
 import Text from '../../components/Text';
-import screenshot from '../../assets/images/projects/hkecds.png';
-import icon from '../../assets/images/projects/hkecds_icon.png';
+import screenshot from '../../assets/images/projects/hkecds.webp';
+import icon from '../../assets/images/projects/hkecds_icon.webp';
 import IconReact from '../../assets/images/skills/react.svg';
 import IconRedux from '../../assets/images/skills/redux.svg';
 import { SkillItem } from '../../layouts/Skills';

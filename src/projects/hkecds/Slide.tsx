@@ -2,8 +2,8 @@ import { BiChevronRight } from 'react-icons/bi';
 import { FaAppStore } from 'react-icons/fa';
 import { GrGamepad } from 'react-icons/gr';
 import { Link } from 'react-router-dom';
-import screenshot from '../../assets/images/projects/hkecds.png';
-import icon from '../../assets/images/projects/hkecds_icon.png';
+import screenshot from '../../assets/images/projects/hkecds.webp';
+import icon from '../../assets/images/projects/hkecds_icon.webp';
 import PROJECTS from '../../config/projects';
 
 function Slide() {

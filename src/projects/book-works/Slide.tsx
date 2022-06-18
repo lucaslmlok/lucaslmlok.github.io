@@ -3,7 +3,7 @@ import { FiBookOpen } from 'react-icons/fi';
 import { GrGamepad } from 'react-icons/gr';
 import { VscGlobe } from 'react-icons/vsc';
 import { Link } from 'react-router-dom';
-import screenshot from '../../assets/images/projects/bookworks.png';
+import screenshot from '../../assets/images/projects/bookworks.webp';
 import PROJECTS from '../../config/projects';
 
 function Slide() {

@@ -3,7 +3,7 @@ import { FaAngleRight } from 'react-icons/fa';
 import { FiBookOpen } from 'react-icons/fi';
 import { VscGlobe } from 'react-icons/vsc';
 import Text from '../../components/Text';
-import screenshot from '../../assets/images/projects/bookworks.png';
+import screenshot from '../../assets/images/projects/bookworks.webp';
 import IconPhp from '../../assets/images/skills/php.svg';
 import IconJquery from '../../assets/images/skills/jquery.svg';
 import IconSass from '../../assets/images/skills/sass.svg';

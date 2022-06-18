@@ -3,8 +3,8 @@ import { FiBookOpen } from 'react-icons/fi';
 import { GrGamepad } from 'react-icons/gr';
 import { VscGlobe } from 'react-icons/vsc';
 import { Link } from 'react-router-dom';
-import screenshot1 from '../../assets/images/projects/spacetown_1.png';
-import screenshot2 from '../../assets/images/projects/spacetown_2.png';
+import screenshot1 from '../../assets/images/projects/spacetown_1.webp';
+import screenshot2 from '../../assets/images/projects/spacetown_2.webp';
 import PROJECTS from '../../config/projects';
 
 function Slide() {

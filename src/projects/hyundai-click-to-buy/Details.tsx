@@ -2,7 +2,7 @@ import { RiListSettingsLine } from 'react-icons/ri';
 import { VscGlobe } from 'react-icons/vsc';
 import { FaAngleRight } from 'react-icons/fa';
 import Text from '../../components/Text';
-import screenshot from '../../assets/images/projects/hyundai_click_to_buy.png';
+import screenshot from '../../assets/images/projects/hyundai_click_to_buy.webp';
 import IconAngular from '../../assets/images/skills/angular.svg';
 import IconPhp from '../../assets/images/skills/php.svg';
 import { SkillItem } from '../../layouts/Skills';

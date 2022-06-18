@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { VscGlobe } from 'react-icons/vsc';
 import { RiListSettingsLine } from 'react-icons/ri';
 import { BiChevronRight } from 'react-icons/bi';
-import screenshot from '../../assets/images/projects/hyundai_click_to_buy.png';
+import screenshot from '../../assets/images/projects/hyundai_click_to_buy.webp';
 import PROJECTS from '../../config/projects';
 
 function Slide() {

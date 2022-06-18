@@ -1,7 +1,7 @@
 import { BiChevronRight } from 'react-icons/bi';
 import { VscGlobe } from 'react-icons/vsc';
 import { Link } from 'react-router-dom';
-import screenshot from '../../assets/images/projects/had.png';
+import screenshot from '../../assets/images/projects/had.webp';
 import PROJECTS from '../../config/projects';
 
 function Slide() {

@@ -1,8 +1,8 @@
 import { FaAngleRight, FaAppStore } from 'react-icons/fa';
 import { RiAndroidLine } from 'react-icons/ri';
 import Text from '../../components/Text';
-import screenshot1 from '../../assets/images/projects/myspfe_1.png';
-import screenshot2 from '../../assets/images/projects/myspfe_2.png';
+import screenshot1 from '../../assets/images/projects/myspfe_1.webp';
+import screenshot2 from '../../assets/images/projects/myspfe_2.webp';
 import IconReact from '../../assets/images/skills/react.svg';
 import IconRedux from '../../assets/images/skills/redux.svg';
 import { SkillItem } from '../../layouts/Skills';

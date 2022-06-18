@@ -3,7 +3,7 @@ import { VscGlobe } from 'react-icons/vsc';
 import { FaAngleRight } from 'react-icons/fa';
 import { BiCalendar } from 'react-icons/bi';
 import Text from '../../components/Text';
-import screenshot from '../../assets/images/projects/mercedes_benz.png';
+import screenshot from '../../assets/images/projects/mercedes_benz.webp';
 import IconAngular from '../../assets/images/skills/angular.svg';
 import IconPhp from '../../assets/images/skills/php.svg';
 import IconBootstrap from '../../assets/images/skills/bootstrap.svg';

@@ -2,8 +2,8 @@ import { BiChevronRight } from 'react-icons/bi';
 import { FaAppStore } from 'react-icons/fa';
 import { RiAndroidLine } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
-import screenshot1 from '../../assets/images/projects/myspfe_1.png';
-import screenshot2 from '../../assets/images/projects/myspfe_2.png';
+import screenshot1 from '../../assets/images/projects/myspfe_1.webp';
+import screenshot2 from '../../assets/images/projects/myspfe_2.webp';
 import PROJECTS from '../../config/projects';
 
 function Slide() {
