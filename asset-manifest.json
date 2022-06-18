@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.775dc7f7.css",
-    "main.js": "/static/js/main.3e66ba96.js",
+    "main.css": "/static/css/main.d1a3de06.css",
+    "main.js": "/static/js/main.e0f96e11.js",
     "static/js/787.86e70ff7.chunk.js": "/static/js/787.86e70ff7.chunk.js",
     "static/media/profile.jpg": "/static/media/profile.c43e419a2e1490a9185d.jpg",
     "static/media/upbeat.png": "/static/media/upbeat.0f2b721bef45c245c67f.png",
@@ -13,7 +13,7 @@
     "static/media/hyundai_click_to_buy.png": "/static/media/hyundai_click_to_buy.4b43f469ccdf51de11ce.png",
     "static/media/myspfe_1.png": "/static/media/myspfe_1.efe3ffa67cb3f2e99855.png",
     "static/media/mercedes_benz.png": "/static/media/mercedes_benz.0be1354201125fe03447.png",
-    "static/media/hkecds.png": "/static/media/hkecds.73cc3da8ef0a1a7fa3bf.png",
+    "static/media/hkecds.png": "/static/media/hkecds.ef1625d474627fce8dcc.png",
     "static/media/bookworks.png": "/static/media/bookworks.537f496e9d7e41a9451d.png",
     "static/media/hkecds_icon.png": "/static/media/hkecds_icon.51a7ee79e9aee5e5a82f.png",
     "static/media/styled-components.svg": "/static/media/styled-components.2e00d138caafe530a6ffdaf27badd9e0.svg",
@@ -40,12 +40,12 @@
     "static/media/firebase.svg": "/static/media/firebase.153370f82bc7f65d61434205f966c188.svg",
     "static/media/angular.svg": "/static/media/angular.825b10bd89c59a702218d095a77c0e65.svg",
     "static/media/react.svg": "/static/media/react.eef8ee4a3dce58da3652ab78e0aa13c7.svg",
-    "main.775dc7f7.css.map": "/static/css/main.775dc7f7.css.map",
-    "main.3e66ba96.js.map": "/static/js/main.3e66ba96.js.map",
+    "main.d1a3de06.css.map": "/static/css/main.d1a3de06.css.map",
+    "main.e0f96e11.js.map": "/static/js/main.e0f96e11.js.map",
     "787.86e70ff7.chunk.js.map": "/static/js/787.86e70ff7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.775dc7f7.css",
-    "static/js/main.3e66ba96.js"
+    "static/css/main.d1a3de06.css",
+    "static/js/main.e0f96e11.js"
   ]
 }
