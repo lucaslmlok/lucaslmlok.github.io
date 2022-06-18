@@ -13,6 +13,7 @@ import UpbeatDetails from '../projects/upbeat/Details';
 import BookworksDetails from '../projects/book-works/Details';
 import HadDetails from '../projects/had/Details';
 import MySpfeDetails from '../projects/myspfe/Details';
+import { useProjectUpdate } from '../Context/ProjectProvider';
 
 const renderProject = (project: string | undefined) => {
   switch (project) {
@@ -42,10 +43,15 @@ const renderProject = (project: string | undefined) => {
 function ProjectDetailsPage() {
   const { project } = useParams();
   const { pathname } = useLocation();
+  const updateProject = useProjectUpdate();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
+  useEffect(() => {
+    updateProject(project);
+  }, [project, updateProject]);
 
   return (
     <div className="bg-gradient-to-b from-blue-50 to-cyan-50/50">

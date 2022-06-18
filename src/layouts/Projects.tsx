@@ -1,4 +1,6 @@
+import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore from 'swiper';
 import { Element } from 'react-scroll';
 
 import { HiCollection } from 'react-icons/hi';
@@ -16,6 +18,8 @@ import UpbeatSlide from '../projects/upbeat/Slide';
 import BookWorksSlide from '../projects/book-works/Slide';
 import HadSlide from '../projects/had/Slide';
 import MyspfeSlide from '../projects/myspfe/Slide';
+import { useProject } from '../Context/ProjectProvider';
+import PROJECTS from '../config/projects';
 
 const swiperBreakpoints = {
   768: {
@@ -44,7 +48,60 @@ const swiperBreakpoints = {
   },
 };
 
+const slides = [
+  {
+    key: PROJECTS.HYUNDAI,
+    component: <HyundaiClickToBuySlide />,
+  },
+  {
+    key: PROJECTS.MERCEDES_BENZ,
+    component: <MercedesBenzOapSlide />,
+  },
+  {
+    key: PROJECTS.SPACE_TOWN_GO,
+    component: <SpaceTownGoSlide />,
+  },
+  {
+    key: PROJECTS.CITYU_CS,
+    component: <CityuCsSlide />,
+  },
+  {
+    key: PROJECTS.HKECDS,
+    component: <HkecdsSlide />,
+  },
+  {
+    key: PROJECTS.UPBEAT,
+    component: <UpbeatSlide />,
+  },
+  {
+    key: PROJECTS.BOOKWORKS,
+    component: <BookWorksSlide />,
+  },
+  {
+    key: PROJECTS.HAD,
+    component: <HadSlide />,
+  },
+  {
+    key: PROJECTS.MYSPFE,
+    component: <MyspfeSlide />,
+  },
+];
+
+const getSlideIndex = (project: string) => {
+  const index = slides.findIndex((slide) => slide.key === project);
+  return index;
+};
+
 function Projects() {
+  const [swiperInstance, setSwiperInstance] = useState<SwiperCore>();
+  const project = useProject();
+
+  useEffect(() => {
+    if (project) {
+      swiperInstance?.slideToLoop(getSlideIndex(project), 0);
+    }
+  }, [project, swiperInstance]);
+
   return (
     <Element name="projects">
       <Section customClass="bg-gradient-to-b from-white to-blue-50/50 pt-0">
@@ -65,42 +122,11 @@ function Projects() {
           centeredSlides
           loop
           breakpoints={swiperBreakpoints}
+          onSwiper={setSwiperInstance}
         >
-          <SwiperSlide>
-            <HyundaiClickToBuySlide />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <MercedesBenzOapSlide />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <SpaceTownGoSlide />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <CityuCsSlide />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <HkecdsSlide />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <UpbeatSlide />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <BookWorksSlide />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <HadSlide />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <MyspfeSlide />
-          </SwiperSlide>
+          {slides.map((slide) => (
+            <SwiperSlide key={slide.key}>{slide.component}</SwiperSlide>
+          ))}
         </Swiper>
       </Section>
     </Element>
