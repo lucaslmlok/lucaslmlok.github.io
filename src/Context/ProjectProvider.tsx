@@ -5,7 +5,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-const ProjectContext = createContext(PROJECTS.HYUNDAI);
+const ProjectContext = createContext<string | null>(PROJECTS.HYUNDAI);
 const ProjectUpdateContext = createContext<any>(null);
 
 export const useProject = () => useContext(ProjectContext);

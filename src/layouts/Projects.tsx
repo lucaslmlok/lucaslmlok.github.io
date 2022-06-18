@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore from 'swiper';
+import SwiperCore, { Autoplay } from 'swiper';
 import { Element } from 'react-scroll';
 
 import { HiCollection } from 'react-icons/hi';
@@ -87,6 +87,7 @@ const slides = [
   },
 ];
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const getSlideIndex = (project: string) => {
   const index = slides.findIndex((slide) => slide.key === project);
   return index;
@@ -97,8 +98,9 @@ function Projects() {
   const project = useProject();
 
   useEffect(() => {
-    if (project) {
-      swiperInstance?.slideToLoop(getSlideIndex(project), 0);
+    if (swiperInstance && project) {
+      swiperInstance.slideToLoop(getSlideIndex(project), 0);
+      swiperInstance.autoplay.start();
     }
   }, [project, swiperInstance]);
 
@@ -116,6 +118,7 @@ function Projects() {
           </Text>
         </Container>
         <Swiper
+          modules={[Autoplay]}
           className="project-swiper mt-16 mb-10"
           spaceBetween={18}
           slidesPerView={1.2}
