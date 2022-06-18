@@ -1,5 +1,5 @@
 // eslint-disable-next-line object-curly-newline
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import Header from './layouts/Header';
 import AnimationLayout from './components/AnimatedLayout';
@@ -23,7 +23,7 @@ function App() {
         draggable
         pauseOnHover
       />
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter basename={process.env.PUBLIC_URL}>
         <Header />
         <main className="overflow-x-hidden">
           <Routes>
@@ -38,7 +38,7 @@ function App() {
             </Route>
           </Routes>
         </main>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
