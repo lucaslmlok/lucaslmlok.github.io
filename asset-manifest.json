@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.aa285341.css",
-    "main.js": "/static/js/main.93f34cc9.js",
+    "main.js": "/static/js/main.d2cc1a66.js",
     "static/js/787.86e70ff7.chunk.js": "/static/js/787.86e70ff7.chunk.js",
-    "static/media/profile.jpg": "/static/media/profile.c43e419a2e1490a9185d.jpg",
-    "static/media/upbeat.png": "/static/media/upbeat.0f2b721bef45c245c67f.png",
-    "static/media/cityu_cs.png": "/static/media/cityu_cs.82896a4098b9fea6ed16.png",
-    "static/media/spacetown_2.png": "/static/media/spacetown_2.869b5b6cc2ab2bdb817f.png",
-    "static/media/myspfe_2.png": "/static/media/myspfe_2.deac908841f81be39390.png",
-    "static/media/spacetown_1.png": "/static/media/spacetown_1.95dfed9e7212383f8b08.png",
-    "static/media/had.png": "/static/media/had.1a55c7afb06a8a57bfb4.png",
-    "static/media/hyundai_click_to_buy.png": "/static/media/hyundai_click_to_buy.4b43f469ccdf51de11ce.png",
-    "static/media/myspfe_1.png": "/static/media/myspfe_1.efe3ffa67cb3f2e99855.png",
-    "static/media/mercedes_benz.png": "/static/media/mercedes_benz.0be1354201125fe03447.png",
-    "static/media/hkecds.png": "/static/media/hkecds.ef1625d474627fce8dcc.png",
-    "static/media/bookworks.png": "/static/media/bookworks.537f496e9d7e41a9451d.png",
-    "static/media/hkecds_icon.png": "/static/media/hkecds_icon.51a7ee79e9aee5e5a82f.png",
+    "static/media/profile.webp": "/static/media/profile.88b09ce9d294378d3465.webp",
+    "static/media/myspfe_2.webp": "/static/media/myspfe_2.92e1496ac501489de9cb.webp",
+    "static/media/upbeat.webp": "/static/media/upbeat.a76c7afc2206059f23b9.webp",
+    "static/media/cityu_cs.webp": "/static/media/cityu_cs.0ee241df6740a9188d28.webp",
+    "static/media/myspfe_1.webp": "/static/media/myspfe_1.e35595c66c53bf13bf2e.webp",
+    "static/media/had.webp": "/static/media/had.0e7f661a92742b6a61f2.webp",
+    "static/media/bookworks.webp": "/static/media/bookworks.8907cef1f824dc3029fd.webp",
+    "static/media/hyundai_click_to_buy.webp": "/static/media/hyundai_click_to_buy.6e73ad602b4e158b3b80.webp",
+    "static/media/spacetown_1.webp": "/static/media/spacetown_1.68c6d11bd2f432b1c8c9.webp",
+    "static/media/spacetown_2.webp": "/static/media/spacetown_2.d86d5e3f7dc6398a6b74.webp",
+    "static/media/mercedes_benz.webp": "/static/media/mercedes_benz.1786187353271db4651d.webp",
+    "static/media/hkecds.webp": "/static/media/hkecds.2518b6d5b08a94a87713.webp",
+    "static/media/hkecds_icon.webp": "/static/media/hkecds_icon.5ee1c892bf104910d822.webp",
     "static/media/styled-components.svg": "/static/media/styled-components.2e00d138caafe530a6ffdaf27badd9e0.svg",
     "static/media/postgresql.svg": "/static/media/postgresql.e407ebb120aa171a7512a371dda497b5.svg",
     "static/media/sass.svg": "/static/media/sass.a3ffb8be3c97ac3bbb38bbdaafc18775.svg",
@@ -41,11 +41,11 @@
     "static/media/angular.svg": "/static/media/angular.825b10bd89c59a702218d095a77c0e65.svg",
     "static/media/react.svg": "/static/media/react.eef8ee4a3dce58da3652ab78e0aa13c7.svg",
     "main.aa285341.css.map": "/static/css/main.aa285341.css.map",
-    "main.93f34cc9.js.map": "/static/js/main.93f34cc9.js.map",
+    "main.d2cc1a66.js.map": "/static/js/main.d2cc1a66.js.map",
     "787.86e70ff7.chunk.js.map": "/static/js/787.86e70ff7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aa285341.css",
-    "static/js/main.93f34cc9.js"
+    "static/js/main.d2cc1a66.js"
   ]
 }
