@@ -74,7 +74,7 @@ function Details() {
           href={url}
           target="_blank"
           rel="noreferrer"
-          className="mt-8 inline-block"
+          className="mt-8 mb-10 inline-block"
         >
           <Button
             customClass="bg-gradient-to-r from-blue-600/90 to-cyan-600/90 before:bg-gradient-to-r before:from-cyan-600/90 before:to-blue-600/90 sm:mr-4"

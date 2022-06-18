@@ -63,7 +63,7 @@ function Details() {
           href={url}
           target="_blank"
           rel="noreferrer"
-          className="mt-8 inline-block"
+          className="mt-8 mb-10 mr-4 inline-block sm:mr-0"
         >
           <Button
             customClass="bg-gradient-to-r from-blue-600/90 to-cyan-600/90 before:bg-gradient-to-r before:from-cyan-600/90 before:to-blue-600/90 sm:mr-4"
@@ -78,7 +78,7 @@ function Details() {
           href="https://play.google.com/store/apps/details?id=hk.eduhk.spfeo.myspfe"
           target="_blank"
           rel="noreferrer"
-          className="mt-8 inline-block"
+          className="mt-8 mb-10 inline-block"
         >
           <Button
             customClass="bg-gradient-to-r from-blue-600/90 to-cyan-600/90 before:bg-gradient-to-r before:from-cyan-600/90 before:to-blue-600/90 sm:mr-4"
@@ -98,12 +98,12 @@ function Details() {
           rel="noreferrer"
         >
           <img
-            className="relative z-10 mx-auto w-1/2"
+            className="relative z-10 mx-auto w-1/2 max-w-[18rem] -translate-x-1/4 lg:translate-x-0"
             src={screenshot1}
             alt=""
           />
           <img
-            className="absolute top-10 left-1/2 mx-auto w-1/2"
+            className="absolute top-10 left-1/2 mx-auto w-1/2 max-w-[18rem] -translate-x-1/4 lg:translate-x-0"
             src={screenshot2}
             alt=""
           />
