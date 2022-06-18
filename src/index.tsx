@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 import * as Email from './helpers/email';
@@ -10,7 +11,9 @@ Email.initEmail();
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HelmetProvider>
+      <App />
+    </HelmetProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

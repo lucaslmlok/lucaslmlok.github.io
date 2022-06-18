@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { GrGamepad } from 'react-icons/gr';
 import { FaAngleRight } from 'react-icons/fa';
 import { FiBookOpen } from 'react-icons/fi';
@@ -9,12 +10,18 @@ import IconJquery from '../../assets/images/skills/jquery.svg';
 import IconSass from '../../assets/images/skills/sass.svg';
 import { SkillItem } from '../../layouts/Skills';
 import Button from '../../components/Button';
+import renderTitle from '../../config/helmet';
 
+const title = 'The Government of HKSAR - Home Affairs Department';
 const url = 'https://www.had.gov.hk/';
 
 function Details() {
   return (
     <div className="details">
+      <Helmet>
+        <title>{renderTitle(title, false)}</title>
+      </Helmet>
+
       <div className="details-content">
         <h2 className="details-company">The Government of HKSAR</h2>
         <h1 className="details-title">Home Affairs Department</h1>

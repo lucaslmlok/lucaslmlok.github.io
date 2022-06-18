@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { GrGamepad } from 'react-icons/gr';
 import { FaAngleRight } from 'react-icons/fa';
 import { FiBookOpen } from 'react-icons/fi';
@@ -9,12 +10,18 @@ import IconJquery from '../../assets/images/skills/jquery.svg';
 import IconSass from '../../assets/images/skills/sass.svg';
 import { SkillItem } from '../../layouts/Skills';
 import Button from '../../components/Button';
+import renderTitle from '../../config/helmet';
 
+const title = 'Hong Kong Education Bureau - Book Works Reading Site';
 const url = 'https://bookworks.edb.edcity.hk/en/';
 
 function Details() {
   return (
     <div className="details">
+      <Helmet>
+        <title>{renderTitle(title, false)}</title>
+      </Helmet>
+
       <div className="details-content">
         <h2 className="details-company">Hong Kong Education Bureau</h2>
         <h1 className="details-title">Book Works Reading Site</h1>

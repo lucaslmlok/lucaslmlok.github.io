@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { GrGamepad } from 'react-icons/gr';
 import { FaAngleRight, FaAppStore } from 'react-icons/fa';
 import Text from '../../components/Text';
@@ -7,12 +8,20 @@ import IconReact from '../../assets/images/skills/react.svg';
 import IconRedux from '../../assets/images/skills/redux.svg';
 import { SkillItem } from '../../layouts/Skills';
 import Button from '../../components/Button';
+import renderTitle from '../../config/helmet';
 
+// eslint-disable-next-line operator-linebreak
+const title =
+  'The University of Hong Kong - The Hong Kong Early Child Development Scale';
 const url = 'https://appadvice.com/app/hkecds/1531076625';
 
 function Details() {
   return (
     <div className="details">
+      <Helmet>
+        <title>{renderTitle(title, false)}</title>
+      </Helmet>
+
       <div className="details-content">
         <h2 className="details-company">The University of Hong Kong</h2>
         <h1 className="details-title">

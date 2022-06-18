@@ -1,7 +1,9 @@
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'react-router-dom';
 import Container from '../components/Container';
 import PageWrapper from '../components/PageWrapper';
+import renderTitle from '../config/helmet';
 
 function TermsAndConditionsPage() {
   const { pathname } = useLocation();
@@ -12,6 +14,10 @@ function TermsAndConditionsPage() {
 
   return (
     <Container>
+      <Helmet>
+        <title>{renderTitle('Terms and Conditions')}</title>
+      </Helmet>
+
       <PageWrapper>
         <h1 className="my-2 text-3xl font-extrabold">Terms and Conditions</h1>
         <p>Last updated: March 02, 2022</p>

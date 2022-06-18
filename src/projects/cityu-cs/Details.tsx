@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { VscGlobe } from 'react-icons/vsc';
 import { FaAngleRight } from 'react-icons/fa';
 import Text from '../../components/Text';
@@ -7,12 +8,18 @@ import IconJquery from '../../assets/images/skills/jquery.svg';
 import IconSass from '../../assets/images/skills/sass.svg';
 import { SkillItem } from '../../layouts/Skills';
 import Button from '../../components/Button';
+import renderTitle from '../../config/helmet';
 
+const title = 'City University of Hong Kong - Department of Computer Science';
 const url = 'https://www.cs.cityu.edu.hk/';
 
 function Details() {
   return (
     <div className="details">
+      <Helmet>
+        <title>{renderTitle(title, false)}</title>
+      </Helmet>
+
       <div className="details-content">
         <h2 className="details-company">City University of Hong Kong</h2>
         <h1 className="details-title">Department of Computer Science</h1>

@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { RiListSettingsLine } from 'react-icons/ri';
 import { VscGlobe } from 'react-icons/vsc';
 import { FaAngleRight } from 'react-icons/fa';
@@ -10,12 +11,18 @@ import IconBootstrap from '../../assets/images/skills/bootstrap.svg';
 import IconChartjs from '../../assets/images/skills/chartjs.svg';
 import { SkillItem } from '../../layouts/Skills';
 import Button from '../../components/Button';
+import renderTitle from '../../config/helmet';
 
+const title = 'Mercedes-Benz Hong Kong - Online Aftersales Platform';
 const url = 'https://www.mb.zungfu.com/aftersales/2/front/en/';
 
 function Details() {
   return (
     <div className="details">
+      <Helmet>
+        <title>{renderTitle(title, false)}</title>
+      </Helmet>
+
       <div className="details-content">
         <h2 className="details-company">Mercedes-Benz Hong Kong</h2>
         <h1 className="details-title">Online Aftersales Platform</h1>

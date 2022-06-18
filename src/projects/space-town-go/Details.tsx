@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { VscGlobe } from 'react-icons/vsc';
 import { FaAngleRight } from 'react-icons/fa';
 import { GrGamepad } from 'react-icons/gr';
@@ -9,13 +10,19 @@ import IconReact from '../../assets/images/skills/react.svg';
 import IconRedux from '../../assets/images/skills/redux.svg';
 import IconStyledComponents from '../../assets/images/skills/styled-components.svg';
 import { SkillItem } from '../../layouts/Skills';
+import renderTitle from '../../config/helmet';
 import Button from '../../components/Button';
 
+const title = 'Hong Kong Education City - Space Town Go!';
 const url = 'https://nets.edb.hkedcity.net/spacetowngo/';
 
 function Details() {
   return (
     <div className="details">
+      <Helmet>
+        <title>{renderTitle(title, false)}</title>
+      </Helmet>
+
       <div className="details-content">
         <h2 className="details-company">Hong Kong Education City</h2>
         <h1 className="details-title">Space Town Go!</h1>

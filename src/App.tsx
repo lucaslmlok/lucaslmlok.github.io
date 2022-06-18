@@ -2,11 +2,13 @@
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import { ToastContainer } from 'react-toastify';
+import { Helmet } from 'react-helmet-async';
 import Header from './layouts/Header';
 import AnimationLayout from './components/AnimatedLayout';
 import Spinner from './components/Spinner';
 
 import 'react-toastify/dist/ReactToastify.css';
+import renderTitle from './config/helmet';
 
 const Home = lazy(() => import('./pages/HomePage'));
 const Terms = lazy(() => import('./pages/TermsAndConditionsPage'));
@@ -15,6 +17,10 @@ const Project = lazy(() => import('./pages/ProjectDetailsPage'));
 function App() {
   return (
     <div className="antialiased">
+      <Helmet>
+        <title>{renderTitle()}</title>
+      </Helmet>
+
       <HashRouter basename={process.env.PUBLIC_URL}>
         <Header />
         <main className="overflow-x-hidden">

@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { FaAngleRight, FaAppStore } from 'react-icons/fa';
 import { RiAndroidLine } from 'react-icons/ri';
 import Text from '../../components/Text';
@@ -7,12 +8,18 @@ import IconReact from '../../assets/images/skills/react.svg';
 import IconRedux from '../../assets/images/skills/redux.svg';
 import { SkillItem } from '../../layouts/Skills';
 import Button from '../../components/Button';
+import renderTitle from '../../config/helmet';
 
+const title = 'City University of Hong Kong - Department of Computer Science';
 const url = 'https://apps.apple.com/app/myspfe/id1552990622?l=en';
 
 function Details() {
   return (
     <div className="details">
+      <Helmet>
+        <title>{renderTitle(title, false)}</title>
+      </Helmet>
+
       <div className="details-content">
         <h2 className="details-company">City University of Hong Kong</h2>
         <h1 className="details-title">Department of Computer Science</h1>

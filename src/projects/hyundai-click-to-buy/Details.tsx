@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { RiListSettingsLine } from 'react-icons/ri';
 import { VscGlobe } from 'react-icons/vsc';
 import { FaAngleRight } from 'react-icons/fa';
@@ -7,12 +8,18 @@ import IconAngular from '../../assets/images/skills/angular.svg';
 import IconPhp from '../../assets/images/skills/php.svg';
 import { SkillItem } from '../../layouts/Skills';
 import Button from '../../components/Button';
+import renderTitle from '../../config/helmet';
 
+const title = 'Hyundai Hong Kong - Click to Buy - Online Car Buying';
 const url = 'https://clicktobuy.hyundai.com.hk/';
 
 function Details() {
   return (
     <div className="details">
+      <Helmet>
+        <title>{renderTitle(title, false)}</title>
+      </Helmet>
+
       <div className="details-content">
         <h2 className="details-company">Hyundai Hong Kong</h2>
         <h1 className="details-title">Click to Buy - Online Car Buying</h1>
