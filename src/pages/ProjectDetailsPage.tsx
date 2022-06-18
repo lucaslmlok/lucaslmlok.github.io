@@ -11,6 +11,7 @@ import CityuCSDetails from '../projects/cityu-cs/Details';
 import HkecdsDetails from '../projects/hkecds/Details';
 import UpbeatDetails from '../projects/upbeat/Details';
 import BookworksDetails from '../projects/book-works/Details';
+import HadDetails from '../projects/had/Details';
 
 const renderProject = (project: string | undefined) => {
   switch (project) {
@@ -28,6 +29,8 @@ const renderProject = (project: string | undefined) => {
       return <UpbeatDetails />;
     case PROJECTS.BOOKWORKS:
       return <BookworksDetails />;
+    case PROJECTS.HAD:
+      return <HadDetails />;
     default:
       return <Navigate to="/" replace />;
   }

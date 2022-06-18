@@ -1,10 +1,12 @@
 import { BiChevronRight } from 'react-icons/bi';
 import { VscGlobe } from 'react-icons/vsc';
+import { Link } from 'react-router-dom';
 import screenshot from '../../assets/images/projects/had.png';
+import PROJECTS from '../../config/projects';
 
 function Slide() {
   return (
-    <a href="https://www.had.gov.hk/" target="_blank" rel="noreferrer">
+    <Link to={`/project/${PROJECTS.HAD}`}>
       <div className="project group">
         <img
           src={screenshot}
@@ -23,7 +25,7 @@ function Slide() {
           view the site <BiChevronRight size={20} className="mt-[0.1rem]" />
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
 

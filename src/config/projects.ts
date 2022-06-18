@@ -6,6 +6,7 @@ const PROJECTS = {
   HKECDS: 'hkecds',
   UPBEAT: 'upbeat',
   BOOKWORKS: 'book-works',
+  HAD: 'had',
 };
 
 export default PROJECTS;
