@@ -10,6 +10,7 @@ import SpaceTownGoDetails from '../projects/space-town-go/Details';
 import CityuCSDetails from '../projects/cityu-cs/Details';
 import HkecdsDetails from '../projects/hkecds/Details';
 import UpbeatDetails from '../projects/upbeat/Details';
+import BookworksDetails from '../projects/book-works/Details';
 
 const renderProject = (project: string | undefined) => {
   switch (project) {
@@ -25,6 +26,8 @@ const renderProject = (project: string | undefined) => {
       return <HkecdsDetails />;
     case PROJECTS.UPBEAT:
       return <UpbeatDetails />;
+    case PROJECTS.BOOKWORKS:
+      return <BookworksDetails />;
     default:
       return <Navigate to="/" replace />;
   }

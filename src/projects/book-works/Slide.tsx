@@ -2,15 +2,13 @@ import { BiChevronRight } from 'react-icons/bi';
 import { FiBookOpen } from 'react-icons/fi';
 import { GrGamepad } from 'react-icons/gr';
 import { VscGlobe } from 'react-icons/vsc';
+import { Link } from 'react-router-dom';
 import screenshot from '../../assets/images/projects/bookworks.png';
+import PROJECTS from '../../config/projects';
 
 function Slide() {
   return (
-    <a
-      href="https://bookworks.edb.edcity.hk/en/"
-      target="_blank"
-      rel="noreferrer"
-    >
+    <Link to={`/project/${PROJECTS.BOOKWORKS}`}>
       <div className="project group">
         <img
           src={screenshot}
@@ -37,7 +35,7 @@ function Slide() {
           view the site <BiChevronRight size={20} className="mt-[0.1rem]" />
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
 
