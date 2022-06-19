@@ -11,7 +11,7 @@ function Slide() {
         <img
           src={screenshot}
           alt=""
-          className="absolute top-11 left-1/2 w-11/12 -translate-x-1/2 rotate-3 transition-transform duration-500 ease-in-out group-hover:rotate-0"
+          className="absolute top-11 left-1/2 w-11/12 -translate-x-1/2 rotate-3 transition-transform duration-500 ease-in-out group-hover:lg:rotate-0"
         />
         <div className="project-tag-container">
           <span className="project-tag">

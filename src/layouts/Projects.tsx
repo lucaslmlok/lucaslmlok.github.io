@@ -124,6 +124,7 @@ function Projects() {
           slidesPerView={1.2}
           centeredSlides
           loop
+          speed={500}
           breakpoints={swiperBreakpoints}
           onSwiper={setSwiperInstance}
         >

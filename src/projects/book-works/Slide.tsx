@@ -13,7 +13,7 @@ function Slide() {
         <img
           src={screenshot}
           alt=""
-          className="absolute top-24 -right-1/4 w-full transition-all duration-1000 ease-in-out group-hover:right-0 md:top-16"
+          className="absolute top-24 -right-1/4 w-full transition-all duration-1000 ease-in-out md:top-16 group-hover:lg:right-0"
         />
         <div className="project-tag-container">
           <span className="project-tag">

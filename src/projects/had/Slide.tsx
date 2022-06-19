@@ -11,7 +11,7 @@ function Slide() {
         <img
           src={screenshot}
           alt="Home Affairs Department"
-          className="-left-1/5 absolute top-14 w-full -translate-x-9 transition-transform duration-500 ease-in-out group-hover:scale-[1.02] lg:top-6"
+          className="-left-1/5 absolute top-14 w-full -translate-x-9 transition-transform duration-500 ease-in-out lg:top-6 group-hover:lg:scale-[1.02]"
         />
         <div className="project-tag-container">
           <span className="project-tag">

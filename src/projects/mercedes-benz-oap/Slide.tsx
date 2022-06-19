@@ -13,7 +13,7 @@ function Slide() {
           <img
             src={screenshot}
             alt=""
-            className="mt-10 w-2/3 transition-all duration-500 ease-in-out group-hover:mt-4 lg:mt-3 lg:w-1/2 lg:group-hover:mt-0"
+            className="mt-10 w-2/3 transition-all duration-500 ease-in-out lg:mt-3 lg:w-1/2 group-hover:lg:mt-4 lg:group-hover:lg:mt-0"
           />
         </div>
         <div className="project-tag-container">

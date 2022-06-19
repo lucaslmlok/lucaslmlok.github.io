@@ -29,7 +29,7 @@
   }
 
   .project-view {
-    @apply -mt-5 inline-flex items-center overflow-hidden text-slate-600 opacity-0 transition-all duration-500 ease-in-out group-hover:mt-0 group-hover:opacity-100;
+    @apply -mt-5 inline-flex items-center overflow-hidden text-slate-600 opacity-0 transition-all duration-500 ease-in-out group-hover:lg:mt-0 group-hover:lg:opacity-100;
   }
 
   .project-img-fade-container {

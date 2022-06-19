@@ -14,12 +14,12 @@ function Slide() {
         <img
           src={screenshot1}
           alt=""
-          className="absolute top-28 left-14 w-3/4 transition-all duration-500 ease-in-out group-hover:left-10"
+          className="absolute top-28 left-14 w-3/4 transition-all duration-500 ease-in-out group-hover:lg:left-10"
         />
         <img
           src={screenshot2}
           alt=""
-          className="absolute top-60 -right-[10%] w-3/4 transition-all duration-500 ease-in-out group-hover:-right-[5%]"
+          className="absolute top-60 -right-[10%] w-3/4 transition-all duration-500 ease-in-out group-hover:lg:-right-[5%]"
         />
         <div className="project-tag-container">
           <span className="project-tag">
